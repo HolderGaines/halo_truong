@@ -1,0 +1,99 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	-log ./log/PD1_20250916_181633.log 
+Date:		Tue Sep 16 18:16:34 2025
+Host:		ictc-eda-be-9-ldap-1 (x86_64 w/Linux 5.14.0-570.33.2.el9_6.x86_64) (18cores*32cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		Rocky Linux release 9.6 (Blue Onyx)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (329 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setMultiCpuUsage -localCpu 2
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> set init_verilog /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/netlist/croc_chip_yosys.v
+<CMD> set init_design_uniquify 1
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell croc_chip
+<CMD> set init_lef_file { /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_tech.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_stdcell_weltap.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_io_notracks.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_io.lef  /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/bondpad_70x70.lef  }
+<CMD> set init_mmmc_file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/croc_mmmc.view
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=09/16 18:17:31, mem=666.7M)
+#% End Load MMMC data ... (date=09/16 18:17:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=667.0M, current mem=667.0M)
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_tech.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_stdcell_weltap.lef ...
+Set DBUPerIGU to M1 pitch 480.
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_io_notracks.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/lef/sg13g2_io.lef ...
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Corner' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler200' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler400' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler1000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler2000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler4000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler10000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIn' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Revie

@@ -1,0 +1,1979 @@
+[09/11 23:55:37      0s] 
+[09/11 23:55:37      0s] Cadence Innovus(TM) Implementation System.
+[09/11 23:55:37      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/11 23:55:37      0s] 
+[09/11 23:55:37      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[09/11 23:55:37      0s] Options:	-log ./log/PD1_20250911_235535.log 
+[09/11 23:55:37      0s] Date:		Thu Sep 11 23:55:37 2025
+[09/11 23:55:37      0s] Host:		ictc-eda-be-9-ldap-1 (x86_64 w/Linux 5.14.0-570.37.1.el9_6.x86_64) (20cores*32cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[09/11 23:55:37      0s] OS:		Rocky Linux release 9.6 (Blue Onyx)
+[09/11 23:55:37      0s] 
+[09/11 23:55:37      0s] License:
+[09/11 23:55:37      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[09/11 23:55:37      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/11 23:55:52     19s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[09/11 23:55:53     21s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/11 23:55:53     21s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[09/11 23:55:53     21s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/11 23:55:53     21s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[09/11 23:55:53     21s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[09/11 23:55:53     21s] @(#)CDS: CPE v20.10-p006
+[09/11 23:55:53     21s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/11 23:55:53     21s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[09/11 23:55:53     21s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[09/11 23:55:53     21s] @(#)CDS: RCDB 11.15.0
+[09/11 23:55:53     21s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[09/11 23:55:53     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_13949_ictc-eda-be-9-ldap-1_vantruong_s3o2kx.
+
+[09/11 23:55:53     21s] Change the soft stacksize limit to 0.2%RAM (329 mbytes). Set global soft_stack_size_limit to change the value.
+[09/11 23:55:55     22s] 
+[09/11 23:55:55     22s] **INFO:  MMMC transition support version v31-84 
+[09/11 23:55:55     22s] 
+[09/11 23:55:55     22s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/11 23:55:55     22s] <CMD> suppressMessage ENCEXT-2799
+[09/11 23:55:55     22s] <CMD> win
+[09/12 00:00:20     44s] <CMD> is_common_ui_mode
+[09/12 00:00:20     44s] <CMD> restoreDesign /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat croc_chip
+[09/12 00:00:20     44s] #% Begin load design ... (date=09/12 00:00:20, mem=669.5M)
+[09/12 00:00:20     44s] Set Default Input Pin Transition as 0.1 ps.
+[09/12 00:00:21     45s] Loading design 'croc_chip' saved by 'Innovus' '20.10-p004_1' on 'Thu Sep 11 11:41:02 2025'.
+[09/12 00:00:21     45s] % Begin Load MMMC data ... (date=09/12 00:00:21, mem=671.7M)
+[09/12 00:00:21     45s] % End Load MMMC data ... (date=09/12 00:00:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=672.0M, current mem=672.0M)
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/sg13g2_tech.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/sg13g2_stdcell_weltap.lef ...
+[09/12 00:00:21     45s] Set DBUPerIGU to M1 pitch 480.
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/sg13g2_io_notracks.lef ...
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/sg13g2_io.lef ...
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Corner' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler200' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler400' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler1000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler2000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler4000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_Filler10000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIn' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadAnalog' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVss' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVdd' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-58' for more detail.
+[09/12 00:00:21     45s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[09/12 00:00:21     45s] To increase the message display limit, refer to the product command reference manual.
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/libs/lef/bondpad_70x70.lef ...
+[09/12 00:00:21     45s] **WARN: (IMPLF-61):	22 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[09/12 00:00:21     45s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/12 00:00:21     45s] Type 'man IMPLF-61' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-200' for more detail.
+[09/12 00:00:21     45s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[09/12 00:00:21     45s] To increase the message display limit, refer to the product command reference manual.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] **WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/12 00:00:21     45s] Type 'man IMPLF-201' for more detail.
+[09/12 00:00:21     45s] 
+[09/12 00:00:21     45s] viaInitial starts at Fri Sep 12 00:00:21 2025
+viaInitial ends at Fri Sep 12 00:00:21 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[09/12 00:00:21     45s] Loading view definition file from /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/viewDefinition.tcl
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_stdcell_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] Read 78 cells in library 'sg13g2_stdcell_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_slow_1p35V_3p0V_125C.lib' ...
+[09/12 00:00:21     45s] Read 14 cells in library 'sg13g2_io_slow_1p35V_3p0V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_slow_1p08V_3p0V_125C.lib' ...
+[09/12 00:00:21     45s] Read 14 cells in library 'sg13g2_io_slow_1p08V_3p0V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:21     45s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:21     45s] Read 1 cells in library 'RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:21     45s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:22     46s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:22     46s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:22     46s] Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
+[09/12 00:00:22     46s] Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_fast_1p32V_3p6V_m40C.lib' ...
+[09/12 00:00:22     46s] Read 14 cells in library 'sg13g2_io_fast_1p32V_3p6V_m40C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_fast_1p65V_3p6V_m40C.lib' ...
+[09/12 00:00:22     46s] Read 14 cells in library 'sg13g2_io_fast_1p65V_3p6V_m40C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+[09/12 00:00:22     46s] **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib)
+[09/12 00:00:22     46s] Read 1 cells in library 'RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C' 
+[09/12 00:00:22     46s] Ending "PreSetAnalysisView" (total cpu=0:00:01.3, real=0:00:01.0, peak res=736.2M, current mem=691.8M)
+[09/12 00:00:22     46s] *** End library_loading (cpu=0.02min, real=0.02min, mem=39.4M, fe_cpu=0.78min, fe_real=4.75min, fe_mem=722.7M) ***
+[09/12 00:00:22     46s] % Begin Load netlist data ... (date=09/12 00:00:22, mem=691.8M)
+[09/12 00:00:22     46s] *** Begin netlist parsing (mem=722.7M) ***
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+[09/12 00:00:22     46s] Type 'man IMPVL-159' for more detail.
+[09/12 00:00:22     46s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[09/12 00:00:22     46s] To increase the message display limit, refer to the product command reference manual.
+[09/12 00:00:22     46s] Created 102 new cells from 26 timing libraries.
+[09/12 00:00:22     46s] Reading netlist ...
+[09/12 00:00:22     46s] Backslashed names will retain backslash and a trailing blank character.
+[09/12 00:00:22     46s] Reading verilogBinary netlist '/ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/vbin/croc_chip.v.bin'
+[09/12 00:00:22     46s] Reading binary database version 2 in 1-threaded mode
+[09/12 00:00:22     46s] 
+[09/12 00:00:22     46s] *** Memory Usage v#1 (Current mem = 741.688M, initial mem = 273.906M) ***
+[09/12 00:00:22     46s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=741.7M) ***
+[09/12 00:00:22     46s] % End Load netlist data ... (date=09/12 00:00:22, total cpu=0:00:00.1, real=0:00:00.0, peak res=712.3M, current mem=712.3M)
+[09/12 00:00:22     46s] Set top cell to croc_chip.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     46s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     46s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[09/12 00:00:22     47s] Type 'man IMPTS-282' for more detail.
+[09/12 00:00:22     47s] **WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+[09/12 00:00:22     47s] To increase the message display limit, refer to the product command reference manual.
+[09/12 00:00:22     47s] Hooked 232 DB cells to tlib cells.
+[09/12 00:00:22     47s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=723.8M, current mem=723.8M)
+[09/12 00:00:22     47s] 1 empty module found.
+[09/12 00:00:22     47s] Starting recursive module instantiation check.
+[09/12 00:00:22     47s] No recursion found.
+[09/12 00:00:22     47s] Building hierarchical netlist for Cell croc_chip ...
+[09/12 00:00:22     47s] *** Netlist is unique.
+[09/12 00:00:22     47s] Setting Std. cell height to 3780 DBU (smallest netlist inst).
+[09/12 00:00:22     47s] ** info: there are 329 modules.
+[09/12 00:00:22     47s] ** info: there are 44521 stdCell insts.
+[09/12 00:00:22     47s] ** info: there are 64 Pad insts.
+[09/12 00:00:22     47s] ** info: there are 2 macros.
+[09/12 00:00:22     47s] 
+[09/12 00:00:22     47s] *** Memory Usage v#1 (Current mem = 796.602M, initial mem = 273.906M) ***
+[09/12 00:00:23     47s] *info: set bottom ioPad orient R0
+[09/12 00:00:23     47s] Initializing I/O assignment ...
+[09/12 00:00:23     47s] Adjusting Core to Bottom to: 168.1800.
+[09/12 00:00:23     47s] **WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[09/12 00:00:23     47s] Type 'man IMPFP-3961' for more detail.
+[09/12 00:00:23     47s] Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+[09/12 00:00:23     47s] Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+[09/12 00:00:23     47s] Set Default Net Delay as 1000 ps.
+[09/12 00:00:23     47s] Set Default Net Load as 0.5 pF. 
+[09/12 00:00:23     47s] Set Default Input Pin Transition as 0.1 ps.
+[09/12 00:00:23     47s] Loading preference file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/gui.pref.tcl ...
+[09/12 00:00:23     47s] ##  Process: 130           (User Set)               
+[09/12 00:00:23     47s] ##     Node: (not set)                           
+[09/12 00:00:23     47s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[09/12 00:00:23     47s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[09/12 00:00:23     47s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[09/12 00:00:23     47s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[09/12 00:00:23     47s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[09/12 00:00:23     47s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <high> specified for reg2reg path_group
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <low> specified for reg2out path_group
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name reg2mem is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <high> specified for reg2mem path_group
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name mem2reg is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <high> specified for mem2reg path_group
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <low> specified for in2reg path_group
+[09/12 00:00:23     47s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[09/12 00:00:23     47s] Type 'man IMPOPT-3602' for more detail.
+[09/12 00:00:23     47s] Effort level <low> specified for in2out path_group
+[09/12 00:00:23     47s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[09/12 00:00:23     47s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[09/12 00:00:23     47s] Change floorplan default-technical-site to 'CoreSite'.
+[09/12 00:00:23     47s] Extraction setup Delayed 
+[09/12 00:00:23     47s] *Info: initialize multi-corner CTS.
+[09/12 00:00:23     47s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=939.8M, current mem=772.0M)
+[09/12 00:00:23     47s] Creating Cell Server ...(0, 1, 1, 1)
+[09/12 00:00:23     47s] Summary for sequential cells identification: 
+[09/12 00:00:23     47s]   Identified SBFF number: 3
+[09/12 00:00:23     47s]   Identified MBFF number: 0
+[09/12 00:00:23     47s]   Identified SB Latch number: 0
+[09/12 00:00:23     47s]   Identified MB Latch number: 0
+[09/12 00:00:23     47s]   Not identified SBFF number: 0
+[09/12 00:00:23     47s]   Not identified MBFF number: 0
+[09/12 00:00:23     47s]   Not identified SB Latch number: 0
+[09/12 00:00:23     47s]   Not identified MB Latch number: 0
+[09/12 00:00:23     47s]   Number of sequential cells which are not FFs: 7
+[09/12 00:00:23     47s] Total number of combinational cells: 62
+[09/12 00:00:23     47s] Total number of sequential cells: 10
+[09/12 00:00:23     47s] Total number of tristate cells: 6
+[09/12 00:00:23     47s] Total number of level shifter cells: 0
+[09/12 00:00:23     47s] Total number of power gating cells: 0
+[09/12 00:00:23     47s] Total number of isolation cells: 0
+[09/12 00:00:23     47s] Total number of power switch cells: 0
+[09/12 00:00:23     47s] Total number of pulse generator cells: 0
+[09/12 00:00:23     47s] Total number of always on buffers: 0
+[09/12 00:00:23     47s] Total number of retention cells: 0
+[09/12 00:00:23     47s] List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+[09/12 00:00:23     47s] Total number of usable buffers: 5
+[09/12 00:00:23     47s] List of unusable buffers:
+[09/12 00:00:23     47s] Total number of unusable buffers: 0
+[09/12 00:00:23     47s] List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+[09/12 00:00:23     47s] Total number of usable inverters: 5
+[09/12 00:00:23     47s] List of unusable inverters:
+[09/12 00:00:23     47s] Total number of unusable inverters: 0
+[09/12 00:00:23     47s] List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+[09/12 00:00:23     47s] Total number of identified usable delay cells: 3
+[09/12 00:00:23     47s] List of identified unusable delay cells:
+[09/12 00:00:23     47s] Total number of identified unusable delay cells: 0
+[09/12 00:00:23     47s] Creating Cell Server, finished. 
+[09/12 00:00:23     47s] 
+[09/12 00:00:23     47s] Deleting Cell Server ...
+[09/12 00:00:23     47s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=944.1M, current mem=944.1M)
+[09/12 00:00:23     47s] Creating Cell Server ...(0, 0, 0, 0)
+[09/12 00:00:23     47s] Summary for sequential cells identification: 
+[09/12 00:00:23     47s]   Identified SBFF number: 3
+[09/12 00:00:23     47s]   Identified MBFF number: 0
+[09/12 00:00:23     47s]   Identified SB Latch number: 0
+[09/12 00:00:23     47s]   Identified MB Latch number: 0
+[09/12 00:00:23     47s]   Not identified SBFF number: 0
+[09/12 00:00:23     47s]   Not identified MBFF number: 0
+[09/12 00:00:23     47s]   Not identified SB Latch number: 0
+[09/12 00:00:23     47s]   Not identified MB Latch number: 0
+[09/12 00:00:23     47s]   Number of sequential cells which are not FFs: 7
+[09/12 00:00:23     47s]  Visiting view : func_view_wc
+[09/12 00:00:23     47s]    : PowerDomain = none : Weighted F : unweighted  = 37.70 (1.000) with rcCorner = 0
+[09/12 00:00:23     47s]    : PowerDomain = none : Weighted F : unweighted  = 33.20 (1.000) with rcCorner = -1
+[09/12 00:00:23     47s]  Visiting view : func_view_bc
+[09/12 00:00:23     47s]    : PowerDomain = none : Weighted F : unweighted  = 17.50 (1.000) with rcCorner = 0
+[09/12 00:00:23     47s]    : PowerDomain = none : Weighted F : unweighted  = 16.20 (1.000) with rcCorner = -1
+[09/12 00:00:23     47s]  Setting StdDelay to 37.70
+[09/12 00:00:23     47s] Creating Cell Server, finished. 
+[09/12 00:00:23     47s] 
+[09/12 00:00:23     47s] % Begin Load MMMC data ... (date=09/12 00:00:23, mem=944.6M)
+[09/12 00:00:23     47s] % End Load MMMC data ... (date=09/12 00:00:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=944.6M, current mem=944.6M)
+[09/12 00:00:23     47s] Reading floorplan file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.fp.gz (mem = 977.7M).
+[09/12 00:00:23     47s] % Begin Load floorplan data ... (date=09/12 00:00:23, mem=945.4M)
+[09/12 00:00:23     47s] *info: reset 51375 existing net BottomPreferredLayer and AvoidDetour
+[09/12 00:00:23     47s] Deleting old partition specification.
+[09/12 00:00:23     47s] Set FPlanBox to (0 0 1840320 1840020)
+[09/12 00:00:23     47s] **WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[09/12 00:00:23     47s] Type 'man IMPFP-3961' for more detail.
+[09/12 00:00:23     47s] Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+[09/12 00:00:23     47s] Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+[09/12 00:00:23     47s]  ... processed partition successfully.
+[09/12 00:00:23     47s] Reading binary special route file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.fp.spr.gz (Created by Innovus v20.10-p004_1 on Thu Sep 11 11:40:53 2025, version: 1)
+[09/12 00:00:23     47s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=950.4M, current mem=950.4M)
+[09/12 00:00:23     47s] There are 64 io inst loaded
+[09/12 00:00:23     47s] There are 269 nets with weight being set
+[09/12 00:00:23     47s] There are 271 nets with bottomPreferredRoutingLayer being set
+[09/12 00:00:23     47s] There are 269 nets with avoidDetour being set
+[09/12 00:00:23     48s] Extracting standard cell pins and blockage ...... 
+[09/12 00:00:23     48s] **WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+[09/12 00:00:23     48s] Temporarily expand pitch on layer M6 from 2280 to 4560 (2x).
+[09/12 00:00:23     48s] **WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+[09/12 00:00:23     48s] Type 'man IMPTR-2108' for more detail.
+[09/12 00:00:23     48s]  As a result, your trialRoute congestion could be incorrect.
+[09/12 00:00:23     48s] Pin and blockage extraction finished
+[09/12 00:00:23     48s] % End Load floorplan data ... (date=09/12 00:00:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=953.1M, current mem=953.1M)
+[09/12 00:00:23     48s] Reading congestion map file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.route.congmap.gz ...
+[09/12 00:00:23     48s] % Begin Load SymbolTable ... (date=09/12 00:00:23, mem=953.4M)
+[09/12 00:00:24     48s] Suppress "**WARN ..." messages.
+[09/12 00:00:24     48s] routingBox: (480 240) (1840000 1839840)
+[09/12 00:00:24     48s] coreBox:    (348000 348000) (1492320 1492020)
+[09/12 00:00:24     48s] Un-suppress "**WARN ..." messages.
+[09/12 00:00:24     48s] % End Load SymbolTable ... (date=09/12 00:00:24, total cpu=0:00:00.1, real=0:00:01.0, peak res=966.2M, current mem=966.2M)
+[09/12 00:00:24     48s] Loading place ...
+[09/12 00:00:24     48s] % Begin Load placement data ... (date=09/12 00:00:24, mem=966.2M)
+[09/12 00:00:24     48s] Reading placement file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.place.gz.
+[09/12 00:00:24     48s] ** Reading stdCellPlacement_binary (Created by Innovus v20.10-p004_1 on Thu Sep 11 11:40:53 2025, version# 2) ...
+[09/12 00:00:24     48s] Read Views for adaptive view pruning ...
+[09/12 00:00:24     48s] Read 0 views from Binary DB for adaptive view pruning
+[09/12 00:00:24     48s] *** Checked 6 GNC rules.
+[09/12 00:00:24     48s] *** applyConnectGlobalNets disabled.
+[09/12 00:00:24     48s] *** Completed restorePlace (cpu=0:00:00.2 real=0:00:00.0 mem=1018.8M) ***
+[09/12 00:00:24     48s] Total net length = 1.840e+06 (9.187e+05 9.214e+05) (ext = 0.000e+00)
+[09/12 00:00:24     48s] % End Load placement data ... (date=09/12 00:00:24, total cpu=0:00:00.2, real=0:00:00.0, peak res=991.0M, current mem=987.7M)
+[09/12 00:00:24     48s] Reading PG file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.pg.gz, version#2, (Created by Innovus v20.10-p004_1 on       Thu Sep 11 11:40:53 2025)
+[09/12 00:00:24     48s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1015.8M) ***
+[09/12 00:00:24     48s] % Begin Load routing data ... (date=09/12 00:00:24, mem=989.2M)
+[09/12 00:00:24     48s] Reading routing file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.route.gz.
+[09/12 00:00:24     48s] Reading Innovus routing data (Created by Innovus v20.10-p004_1 on Thu Sep 11 11:40:53 2025 Format: 20.1) ...
+[09/12 00:00:25     49s] *** Total 50010 nets are successfully restored.
+[09/12 00:00:25     49s] *** Completed restoreRoute (cpu=0:00:00.5 real=0:00:01.0 mem=1078.8M) ***
+[09/12 00:00:25     49s] % End Load routing data ... (date=09/12 00:00:25, total cpu=0:00:00.5, real=0:00:01.0, peak res=1052.7M, current mem=1052.0M)
+[09/12 00:00:25     49s] Loading Drc markers ...
+[09/12 00:00:25     49s] ... 4393 markers are loaded ...
+[09/12 00:00:25     49s] ... 4174 geometry drc markers are loaded ...
+[09/12 00:00:25     49s] ... 19 antenna drc markers are loaded ...
+[09/12 00:00:25     49s] TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+[09/12 00:00:25     49s] Reading property file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.prop
+[09/12 00:00:25     49s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1086.8M) ***
+[09/12 00:00:25     49s] Reading dirtyarea snapshot file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06complete.dat/croc_chip.db.da.gz (Create by Innovus v20.10-p004_1 on Thu Sep 11 11:40:54 2025, version: 4).
+[09/12 00:00:26     49s] Set Default Input Pin Transition as 0.1 ps.
+[09/12 00:00:26     49s] Extraction setup Started 
+[09/12 00:00:26     49s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2773' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 2.2 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/12 00:00:26     49s] Type 'man IMPEXT-2776' for more detail.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.135 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0145 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/12 00:00:26     49s] Summary of Active RC-Corners : 
+[09/12 00:00:26     49s]  
+[09/12 00:00:26     49s]  Analysis View: func_view_wc
+[09/12 00:00:26     49s]     RC-Corner Name        : default_rc_corner
+[09/12 00:00:26     49s]     RC-Corner Index       : 0
+[09/12 00:00:26     49s]     RC-Corner Temperature : 25 Celsius
+[09/12 00:00:26     49s]     RC-Corner Cap Table   : ''
+[09/12 00:00:26     49s]     RC-Corner PreRoute Res Factor         : 1
+[09/12 00:00:26     49s]     RC-Corner PreRoute Cap Factor         : 1
+[09/12 00:00:26     49s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/12 00:00:26     49s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/12 00:00:26     49s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/12 00:00:26     49s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/12 00:00:26     49s]  
+[09/12 00:00:26     49s]  Analysis View: func_view_bc
+[09/12 00:00:26     49s]     RC-Corner Name        : default_rc_corner
+[09/12 00:00:26     49s]     RC-Corner Index       : 0
+[09/12 00:00:26     49s]     RC-Corner Temperature : 25 Celsius
+[09/12 00:00:26     49s]     RC-Corner Cap Table   : ''
+[09/12 00:00:26     49s]     RC-Corner PreRoute Res Factor         : 1
+[09/12 00:00:26     49s]     RC-Corner PreRoute Cap Factor         : 1
+[09/12 00:00:26     49s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/12 00:00:26     49s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/12 00:00:26     49s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/12 00:00:26     49s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/12 00:00:26     49s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/12 00:00:26     49s] LayerId::1 widthSet size::1
+[09/12 00:00:26     49s] LayerId::2 widthSet size::3
+[09/12 00:00:26     49s] LayerId::3 widthSet size::3
+[09/12 00:00:26     49s] LayerId::4 widthSet size::3
+[09/12 00:00:26     49s] LayerId::5 widthSet size::3
+[09/12 00:00:26     49s] LayerId::6 widthSet size::1
+[09/12 00:00:26     49s] LayerId::7 widthSet size::1
+[09/12 00:00:26     49s] Initializing multi-corner resistance tables ...
+[09/12 00:00:26     49s] **Info: Trial Route has Max Route Layer 15/7.
+[09/12 00:00:26     49s] {RT default_rc_corner 0 5 5 0}
+[09/12 00:00:26     49s] Preroute length aware model : LLS: 2-3 ; HLS: 3-5 ; rDens: 0.293562 ; uaWl: 0.999559 ; uaWlH: 0.468713 ; aWlH: 0.000060 ; Pmax: 0.896400 ; wcR: 0.533800 ; newSi: 0.095200 ; pMod: 80 ; 
+[09/12 00:00:26     49s] Start generating vias ..
+[09/12 00:00:26     49s] #create default rule from bind_ndr_rule rule=0x7ffab5bedf50 0x7ffa99b0afe8
+[09/12 00:00:26     49s] #WARNING (NRDB-407) pitch for LAYER TopMetal1 is defined too small, reset to 2280
+[09/12 00:00:26     50s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=0 placement=0 pin_access=1
+[09/12 00:00:26     50s] #Skip building auto via since it is not turned on.
+[09/12 00:00:26     50s] Extracting standard cell pins and blockage ...... 
+[09/12 00:00:26     50s] **WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+[09/12 00:00:26     50s] Temporarily expand pitch on layer M6 from 2280 to 4560 (2x).
+[09/12 00:00:26     50s] **WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+[09/12 00:00:26     50s] Type 'man IMPTR-2108' for more detail.
+[09/12 00:00:26     50s]  As a result, your trialRoute congestion could be incorrect.
+[09/12 00:00:26     50s] Pin and blockage extraction finished
+[09/12 00:00:26     50s] Via generation completed.
+[09/12 00:00:26     50s] % Begin Load power constraints ... (date=09/12 00:00:26, mem=1076.2M)
+[09/12 00:00:26     50s] % End Load power constraints ... (date=09/12 00:00:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=1082.9M, current mem=1082.9M)
+[09/12 00:00:26     50s] % Begin load AAE data ... (date=09/12 00:00:26, mem=1147.1M)
+[09/12 00:00:27     50s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[09/12 00:00:27     50s] AAE DB initialization (MEM=1207.19 CPU=0:00:00.1 REAL=0:00:00.0) 
+[09/12 00:00:27     50s] % End load AAE data ... (date=09/12 00:00:27, total cpu=0:00:00.4, real=0:00:01.0, peak res=1162.5M, current mem=1162.5M)
+[09/12 00:00:27     50s] Restoring CCOpt config...
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_sys...
+[09/12 00:00:27     50s]     clock_tree clk_sys contains 4983 sinks and 0 clock gates.
+[09/12 00:00:27     50s]     Extraction for clk_sys complete.
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_sys done.
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_rtc...
+[09/12 00:00:27     50s]     clock_tree clk_rtc contains 1 sinks and 0 clock gates.
+[09/12 00:00:27     50s]     Extraction for clk_rtc complete.
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_rtc done.
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_jtg...
+[09/12 00:00:27     50s]     clock_tree clk_jtg contains 290 sinks and 0 clock gates.
+[09/12 00:00:27     50s]     Extraction for clk_jtg complete.
+[09/12 00:00:27     50s]   Extracting original clock gating for clk_jtg done.
+[09/12 00:00:27     50s]   The skew group clk_jtg/func_mode_ideal_bc was created. It contains 290 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_jtg/func_mode_ideal_wc was created. It contains 290 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_rtc/func_mode_ideal_bc was created. It contains 1 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_rtc/func_mode_ideal_wc was created. It contains 1 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_sys/func_mode_ideal_bc was created. It contains 4983 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_sys/func_mode_ideal_wc was created. It contains 4983 sinks and 1 sources.
+[09/12 00:00:27     50s]   Added 1 ignore pin (of 1 specified) to skew group 1. Skew group now contains 1 ignore pin.
+[09/12 00:00:27     50s]   Added 1 ignore pin (of 1 specified) to skew group 4. Skew group now contains 1 ignore pin.
+[09/12 00:00:27     50s]   Added 1 ignore pin (of 1 specified) to skew group 7. Skew group now contains 1 ignore pin.
+[09/12 00:00:27     50s]   The skew group clk_jtg/func_mode_ideal_bc was created. It contains 290 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_rtc/func_mode_ideal_bc was created. It contains 1 sinks and 1 sources.
+[09/12 00:00:27     50s]   The skew group clk_sys/func_mode_ideal_bc was created. It contains 4983 sinks and 1 sources.
+[09/12 00:00:27     50s] Restoring CCOpt config done.
+[09/12 00:00:27     51s] Deleting Cell Server ...
+[09/12 00:00:27     51s] Creating Cell Server ...(0, 1, 1, 1)
+[09/12 00:00:27     51s] Summary for sequential cells identification: 
+[09/12 00:00:27     51s]   Identified SBFF number: 3
+[09/12 00:00:27     51s]   Identified MBFF number: 0
+[09/12 00:00:27     51s]   Identified SB Latch number: 0
+[09/12 00:00:27     51s]   Identified MB Latch number: 0
+[09/12 00:00:27     51s]   Not identified SBFF number: 0
+[09/12 00:00:27     51s]   Not identified MBFF number: 0
+[09/12 00:00:27     51s]   Not identified SB Latch number: 0
+[09/12 00:00:27     51s]   Not identified MB Latch number: 0
+[09/12 00:00:27     51s]   Number of sequential cells which are not FFs: 7
+[09/12 00:00:27     51s] Total number of combinational cells: 62
+[09/12 00:00:27     51s] Total number of sequential cells: 10
+[09/12 00:00:27     51s] Total number of tristate cells: 6
+[09/12 00:00:27     51s] Total number of level shifter cells: 0
+[09/12 00:00:27     51s] Total number of power gating cells: 0
+[09/12 00:00:27     51s] Total number of isolation cells: 0
+[09/12 00:00:27     51s] Total number of power switch cells: 0
+[09/12 00:00:27     51s] Total number of pulse generator cells: 0
+[09/12 00:00:27     51s] Total number of always on buffers: 0
+[09/12 00:00:27     51s] Total number of retention cells: 0
+[09/12 00:00:27     51s] List of usable buffers: sg13g2_buf_1 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+[09/12 00:00:27     51s] Total number of usable buffers: 4
+[09/12 00:00:27     51s] List of unusable buffers: sg13g2_buf_16
+[09/12 00:00:27     51s] Total number of unusable buffers: 1
+[09/12 00:00:27     51s] List of usable inverters: sg13g2_inv_1 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+[09/12 00:00:27     51s] Total number of usable inverters: 4
+[09/12 00:00:27     51s] List of unusable inverters: sg13g2_inv_16
+[09/12 00:00:27     51s] Total number of unusable inverters: 1
+[09/12 00:00:27     51s] List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+[09/12 00:00:27     51s] Total number of identified usable delay cells: 3
+[09/12 00:00:27     51s] List of identified unusable delay cells:
+[09/12 00:00:27     51s] Total number of identified unusable delay cells: 0
+[09/12 00:00:27     51s] Creating Cell Server, finished. 
+[09/12 00:00:27     51s] 
+[09/12 00:00:27     51s] Deleting Cell Server ...
+[09/12 00:00:27     51s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+[09/12 00:00:27     51s] timing_enable_default_delay_arc
+[09/12 00:00:27     51s] #% End load design ... (date=09/12 00:00:27, total cpu=0:00:06.3, real=0:00:07.0, peak res=1182.3M, current mem=1173.7M)
+[09/12 00:00:27     51s] 
+[09/12 00:00:27     51s] *** Summary of all messages that are not suppressed in this session:
+[09/12 00:00:27     51s] Severity  ID               Count  Summary                                  
+[09/12 00:00:27     51s] WARNING   IMPLF-58            22  MACRO '%s' has been found in the databas...
+[09/12 00:00:27     51s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[09/12 00:00:27     51s] WARNING   IMPLF-200           28  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[09/12 00:00:27     51s] WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+[09/12 00:00:27     51s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[09/12 00:00:27     51s] WARNING   IMPTS-282           28  Cell '%s' is not a level shifter cell bu...
+[09/12 00:00:27     51s] WARNING   IMPEXT-2766          7  The sheet resistance for layer %s is not...
+[09/12 00:00:27     51s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[09/12 00:00:27     51s] WARNING   IMPEXT-2776          6  The via resistance between layers %s and...
+[09/12 00:00:27     51s] WARNING   IMPCK-8086           2  The command %s is obsolete and will be r...
+[09/12 00:00:27     51s] WARNING   IMPVL-159          186  Pin '%s' of cell '%s' is defined in LEF ...
+[09/12 00:00:27     51s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[09/12 00:00:27     51s] WARNING   IMPOPT-3602          6  The specified path group name %s is not ...
+[09/12 00:00:27     51s] WARNING   IMPTR-2104           2  Layer %s: Pitch=%d is less than min widt...
+[09/12 00:00:27     51s] WARNING   IMPTR-2108           2  For layer M%d, the gaps of %d out of %d ...
+[09/12 00:00:27     51s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[09/12 00:00:27     51s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[09/12 00:00:27     51s] WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+[09/12 00:00:27     51s] *** Message Summary: 332 warning(s), 0 error(s)
+[09/12 00:00:27     51s] 
+[09/12 00:00:33     51s] <CMD> win
+[09/12 00:00:35     52s] <CMD> setLayerPreference violation -isVisible 0
+[09/12 00:00:36     52s] <CMD> zoomBox 261.87100 75.34700 1740.56700 1537.70400
+[09/12 00:00:36     52s] <CMD> zoomBox 525.60500 196.25600 1593.96400 1252.81000
+[09/12 00:00:37     52s] <CMD> zoomBox 992.53500 421.06200 1335.02800 759.77100
+[09/12 00:00:37     52s] <CMD> zoomBox 1097.75400 486.24200 1276.53900 663.05100
+[09/12 00:00:37     52s] <CMD> zoomBox 1114.99000 497.05700 1266.95800 647.34600
+[09/12 00:00:38     53s] <CMD> zoomBox 1142.09400 514.06400 1251.89200 622.64900
+[09/12 00:00:38     53s] <CMD> zoomBox 1053.68200 458.47300 1301.14200 703.19900
+[09/12 00:00:39     53s] <CMD> zoomBox 954.03100 395.47600 1356.98000 793.97300
+[09/12 00:00:39     53s] <CMD> zoomBox 746.77700 180.74900 1518.70300 944.14500
+[09/12 00:00:40     53s] <CMD> zoomBox 899.82400 404.01100 1373.88400 872.83300
+[09/12 00:00:40     53s] <CMD> zoomBox 1035.32400 601.67700 1245.66700 809.69600
+[09/12 00:00:41     53s] <CMD> zoomBox 1087.21700 676.80300 1197.01800 785.39100
+[09/12 00:00:41     53s] <CMD> zoomBox 1109.22000 708.32600 1176.65200 775.01300
+[09/12 00:00:41     53s] <CMD> zoomBox 1114.71500 715.51600 1172.03200 772.20000
+[09/12 00:00:47     54s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 00:00:50     54s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 00:00:52     55s] <CMD> zoomBox 1126.73300 718.95200 1249.02600 767.85100
+[09/12 00:00:54     55s] <CMD> zoomBox 1148.37700 727.44200 1223.48200 757.47300
+[09/12 00:00:54     55s] <CMD> zoomBox 1153.43500 729.59000 1217.27500 755.11700
+[09/12 00:00:55     55s] <CMD> zoomBox 1161.38900 732.97000 1207.51400 751.41300
+[09/12 00:01:10     56s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 00:01:10     56s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 00:01:12     56s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 00:01:12     56s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 00:01:14     57s] <CMD> zoomBox 1141.82500 728.54700 1216.93300 758.57900
+[09/12 00:01:14     57s] <CMD> zoomBox 1109.96800 721.34400 1232.27300 770.24800
+[09/12 00:01:15     57s] <CMD> zoomBox 1099.92900 719.22200 1243.81700 776.75600
+[09/12 00:01:16     57s] <CMD> zoomBox 1038.75300 706.26900 1314.39900 816.48700
+[09/12 00:01:16     57s] <CMD> zoomBox 1016.19800 701.48700 1340.48700 831.15500
+[09/12 00:01:17     57s] <CMD> zoomBox 1065.68200 715.80900 1264.83800 795.44200
+[09/12 00:01:17     57s] <CMD> zoomBox 1093.70400 726.57700 1216.01200 775.48200
+[09/12 00:01:18     57s] <CMD> zoomBox 1100.39400 729.14700 1204.35600 770.71700
+[09/12 00:01:18     57s] <CMD> zoomBox 1115.56600 736.58800 1179.41400 762.11800
+[09/12 00:01:18     58s] <CMD> zoomBox 1119.52100 738.74500 1173.79300 760.44600
+[09/12 00:04:01     71s] <CMD> zoomBox 1107.27100 735.79300 1182.38800 765.82900
+[09/12 00:04:03     71s] <CMD> selectInst i_croc_soc/i_croc/i_core_wrap/i_ibex_if_stage_i_prefetch_buffer_i_fifo_i_rdata_q_78__reg
+[09/12 00:04:03     71s] <CMD> zoomBox 1079.66100 728.97100 1201.98100 777.88100
+[09/12 00:04:04     71s] <CMD> zoomBox 1067.18100 725.83500 1211.08700 783.37600
+[09/12 00:04:04     72s] <CMD> zoomBox 1014.90500 712.69900 1249.23200 806.39500
+[09/12 00:04:09     72s] <CMD> zoomBox 990.99800 706.69200 1266.67700 816.92300
+[09/12 00:04:09     72s] <CMD> zoomBox 845.05500 670.02000 1373.17100 881.18900
+[09/12 00:04:10     72s] <CMD> zoomBox 791.17400 656.48200 1412.48700 904.91600
+[09/12 00:04:11     73s] <CMD> zoomBox 839.99500 678.22600 1368.11100 889.39500
+[09/12 00:04:12     73s] <CMD> zoomBox 946.74600 725.92000 1271.07700 855.60500
+[09/12 00:04:12     73s] <CMD> zoomBox 1012.30500 755.21000 1211.48600 834.85300
+[09/12 00:04:13     73s] <CMD> zoomBox 1062.17900 777.28200 1166.15300 818.85600
+[09/12 00:04:13     73s] <CMD> zoomBox 1077.29200 783.82300 1152.41500 813.86100
+[09/12 00:04:13     73s] <CMD> zoomBox 1088.21200 788.54900 1142.48900 810.25200
+[09/12 00:04:21     74s] <CMD> zoomBox 1092.47100 790.34700 1138.60600 808.79400
+[09/12 00:04:21     74s] <CMD> zoomBox 1101.78400 794.27800 1130.11700 805.60700
+[09/12 00:04:21     74s] <CMD> zoomBox 1104.00700 795.21600 1128.09000 804.84600
+[09/12 00:04:22     74s] <CMD> zoomBox 1107.50200 796.69100 1124.90300 803.64900
+[09/12 00:04:23     74s] <CMD> zoomBox 1105.89500 796.01300 1126.36800 804.19900
+[09/12 00:04:23     74s] <CMD> zoomBox 1101.78700 794.28100 1130.12500 805.61200
+[09/12 00:04:24     74s] <CMD> zoomBox 1096.10000 791.88500 1135.32400 807.56900
+[09/12 00:04:27     74s] <CMD> zoomBox 1092.54000 790.49800 1138.68600 808.95000
+[09/12 00:04:27     74s] <CMD> zoomBox 1042.23400 770.90700 1186.18700 828.46700
+[09/12 00:04:37     75s] <CMD> zoomBox 1014.20300 760.31900 1213.44700 839.98700
+[09/12 00:04:37     75s] <CMD> zoomBox 975.40700 745.66500 1251.17600 855.93200
+[09/12 00:04:38     76s] <CMD> zoomBox 1042.23300 770.90600 1186.18800 828.46700
+[09/12 00:04:54     77s] <CMD> zoomBox 1053.86100 774.66100 1176.22300 823.58800
+[09/12 00:04:54     77s] <CMD> zoomBox 1085.35700 784.83200 1149.23100 810.37200
+[09/12 00:04:54     77s] <CMD> zoomBox 1098.62900 789.11800 1137.85600 804.80300
+[09/12 00:04:55     77s] <CMD> zoomBox 1106.78000 791.74900 1130.87100 801.38200
+[09/12 00:04:58     78s] <CMD> zoomBox 1104.45900 790.99400 1132.80200 802.32700
+[09/12 00:04:59     78s] <CMD> zoomBox 1098.51700 789.06100 1137.74600 804.74700
+[09/12 00:05:01     78s] <CMD> zoomBox 1094.73800 787.83200 1140.89000 806.28600
+[09/12 00:05:02     78s] <CMD> zoomBox 1078.90700 782.68300 1154.06000 812.73300
+[09/12 00:05:03     78s] <CMD> zoomBox 1085.06000 784.68400 1148.94100 810.22700
+[09/12 00:05:04     78s] <CMD> zoomBox 1094.73500 787.83100 1140.89000 806.28600
+[09/12 00:05:04     78s] <CMD> zoomBox 1098.51400 789.06000 1137.74600 804.74700
+[09/12 00:05:05     78s] <CMD> zoomBox 1104.45600 790.99300 1132.80100 802.32700
+[09/12 00:05:14     79s] <CMD> zoomBox 1096.28300 789.65100 1135.51800 805.33900
+[09/12 00:05:15     79s] <CMD> zoomBox 1091.09100 788.79200 1137.25000 807.24900
+[09/12 00:05:15     79s] <CMD> zoomBox 1069.54400 785.21100 1144.70700 815.26500
+[09/12 00:05:16     79s] <CMD> zoomBox 1059.70500 783.58600 1148.13200 818.94400
+[09/12 00:05:16     79s] <CMD> zoomBox 1048.16400 781.68500 1152.19700 823.28300
+[09/12 00:05:16     79s] <CMD> zoomBox 977.71300 770.08300 1177.00900 849.77200
+[09/12 00:05:18     80s] <CMD> zoomBox 885.47000 754.92300 1209.99200 884.68400
+[09/12 00:05:19     80s] <CMD> zoomBox 666.79400 718.94900 1288.48000 967.53200
+[09/12 00:05:20     80s] <CMD> zoomBox 498.03700 688.46600 1358.50300 1032.52600
+[09/12 00:05:23     81s] <CMD> zoomBox 723.12700 730.85300 1251.56200 942.14900
+[09/12 00:05:24     81s] <CMD> zoomBox 861.36000 756.88300 1185.88700 886.64600
+[09/12 00:05:24     81s] <CMD> zoomBox 978.15300 781.27700 1122.14900 838.85400
+[09/12 00:05:25     81s] <CMD> zoomBox 1002.28000 787.52100 1106.31800 829.12100
+[09/12 00:05:26     81s] <CMD> zoomBox 1026.52000 793.79500 1090.41300 819.34300
+[09/12 00:05:26     81s] <CMD> zoomBox 1032.30600 795.29300 1086.61600 817.00900
+[09/12 00:05:31     82s] <CMD> zoomBox 1002.45600 787.59200 1106.50400 829.19600
+[09/12 00:05:31     82s] <CMD> zoomBox 945.27500 772.84200 1144.60100 852.54300
+[09/12 00:05:32     82s] <CMD> zoomBox 870.11100 753.45400 1194.68000 883.23400
+[09/12 00:05:33     82s] <CMD> zoomBox 835.73500 744.58700 1217.58300 897.27000
+[09/12 00:05:33     82s] <CMD> zoomBox 691.74100 707.44500 1313.52000 956.06500
+[09/12 00:05:39     83s] <CMD> zoomBox 739.43400 723.04600 1267.94800 934.37400
+[09/12 00:05:40     83s] <CMD> zoomBox 814.38400 747.62900 1196.23500 900.31300
+[09/12 00:05:40     83s] <CMD> zoomBox 907.58500 778.29500 1106.91600 857.99800
+[09/12 00:05:40     83s] <CMD> zoomBox 949.00500 791.55700 1071.42100 840.50500
+[09/12 00:05:41     83s] <CMD> zoomBox 958.89300 794.72300 1062.94700 836.32900
+[09/12 00:05:41     83s] <CMD> zoomBox 974.63300 800.27200 1049.81200 830.33300
+[09/12 00:05:41     84s] <CMD> zoomBox 986.00400 804.28300 1040.32200 826.00200
+[09/12 00:05:43     84s] <CMD> zoomBox 990.33800 805.93300 1036.50800 824.39400
+[09/12 00:05:43     84s] <CMD> zoomBox 999.79800 809.56400 1028.15300 820.90200
+[09/12 00:05:44     84s] <CMD> zoomBox 1001.99700 810.55300 1026.10100 820.19100
+[09/12 00:05:44     84s] <CMD> zoomBox 1003.86700 811.39300 1024.35600 819.58600
+[09/12 00:05:48     84s] <CMD> zoomBox 994.15900 807.05600 1033.41600 822.75300
+[09/12 00:05:48     84s] <CMD> zoomBox 975.56400 798.74800 1050.76900 828.81900
+[09/12 00:05:48     84s] <CMD> zoomBox 968.69900 795.68100 1057.17600 831.05900
+[09/12 00:05:49     84s] <CMD> zoomBox 951.12200 787.82800 1073.58200 836.79400
+[09/12 00:05:51     85s] <CMD> zoomBox 981.39800 801.22700 1045.32400 826.78800
+[09/12 00:05:52     85s] <CMD> zoomBox 986.35800 803.42200 1040.69500 825.14900
+[09/12 00:05:52     85s] <CMD> zoomBox 994.15600 806.87400 1033.41500 822.57200
+[09/12 00:17:00    142s] <CMD> fit
+[09/12 00:17:01    143s] <CMD> zoomBox -306.04500 248.83100 2336.30700 1305.38400
+[09/12 00:17:02    143s] <CMD> zoomBox 725.82000 523.89400 1445.83900 811.79600
+[09/12 00:17:03    143s] <CMD> zoomBox 832.68500 552.77300 1352.89900 760.78200
+[09/12 00:17:03    143s] <CMD> zoomBox 909.99200 573.63700 1285.84700 723.92400
+[09/12 00:17:05    143s] <CMD> zoomBox 784.19700 535.86400 1396.21900 780.58300
+[09/12 00:17:06    144s] <CMD> zoomBox 377.73300 410.32100 1757.08000 961.85700
+[09/12 00:17:07    144s] <CMD> zoomBox 557.18300 518.72000 1553.76100 917.20500
+[09/12 00:17:07    144s] <CMD> zoomBox 755.07100 660.57900 1275.29200 868.59100
+[09/12 00:17:08    144s] <CMD> zoomBox 785.58600 684.33800 1227.77400 861.14800
+[09/12 00:17:09    144s] <CMD> zoomBox 854.43700 720.14100 1125.99700 828.72500
+[09/12 00:17:10    145s] <CMD> zoomBox 897.33600 741.51400 1064.10800 808.19800
+[09/12 00:17:10    145s] <CMD> zoomBox 923.77500 754.49800 1026.19500 795.45100
+[09/12 00:17:13    145s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 00:17:14    145s] <CMD> setLayerPreference Metal1 -isVisible 1
+[09/12 00:17:15    145s] <CMD> zoomBox 909.59900 751.92500 1030.09400 800.10500
+[09/12 00:17:15    145s] <CMD> zoomBox 893.01500 748.92900 1034.77400 805.61200
+[09/12 00:17:15    145s] <CMD> zoomBox 793.79300 730.85000 1065.36000 839.43700
+[09/12 00:17:16    145s] <CMD> zoomBox 757.22600 724.20400 1076.71700 851.95400
+[09/12 00:17:16    146s] <CMD> zoomBox 533.99800 683.63700 1146.04600 928.36600
+[09/12 00:17:16    146s] <CMD> zoomBox 354.62700 651.04000 1201.75300 989.76600
+[09/12 00:17:17    146s] <CMD> zoomBox 240.56100 630.31100 1237.17900 1028.81200
+[09/12 00:17:18    146s] <CMD> zoomBox -237.25200 543.47800 1385.57600 1192.37100
+[09/12 00:17:20    146s] <CMD> zoomBox 214.37200 637.66200 1210.99100 1036.16300
+[09/12 00:17:20    146s] <CMD> zoomBox 413.82900 679.25700 1133.88700 967.17500
+[09/12 00:17:20    147s] <CMD> zoomBox 614.21400 721.04600 1056.42400 897.86500
+[09/12 00:17:21    147s] <CMD> zoomBox 702.53300 739.77200 1022.03300 867.52500
+[09/12 00:17:21    147s] <CMD> zoomBox 736.99100 747.12100 1008.56600 855.71100
+[09/12 00:17:21    147s] <CMD> zoomBox 830.32300 767.02500 972.09000 823.71100
+[09/12 00:17:21    147s] <CMD> zoomBox 845.61300 770.28600 966.11500 818.46900
+[09/12 00:17:22    147s] <CMD> zoomBox 879.04300 777.41500 953.05000 807.00700
+[09/12 00:17:22    147s] <CMD> fit
+[09/12 00:17:24    147s] <CMD> zoomBox -1242.01500 46.70900 3060.61000 1767.12800
+[09/12 00:17:24    147s] <CMD> zoomBox -435.63200 350.01600 2206.71900 1406.56900
+[09/12 00:17:24    148s] <CMD> zoomBox 177.81200 580.75300 1557.13600 1132.28000
+[09/12 00:17:25    148s] <CMD> zoomBox 550.48800 720.92800 1162.50300 965.64400
+[09/12 00:17:25    148s] <CMD> zoomBox 665.18900 764.07100 1041.04400 914.35800
+[09/12 00:17:25    148s] <CMD> zoomBox 752.44500 796.89000 948.64700 875.34200
+[09/12 00:17:26    148s] <CMD> zoomBox 778.88800 806.87600 920.64500 863.55800
+[09/12 00:17:26    148s] <CMD> zoomBox 805.45500 816.95900 892.51200 851.76900
+[09/12 00:17:26    148s] <CMD> zoomBox 817.18600 821.43300 880.08700 846.58400
+[09/12 00:17:27    148s] <CMD> fit
+[09/12 00:17:28    148s] <CMD> zoomBox -1242.57300 53.95100 3060.05300 1774.37000
+[09/12 00:17:28    149s] <CMD> zoomBox -81.81000 514.04200 1827.28900 1277.40100
+[09/12 00:17:28    149s] <CMD> zoomBox 275.44500 655.64700 1447.87300 1124.44600
+[09/12 00:17:29    149s] <CMD> zoomBox 494.84600 742.61000 1214.86300 1030.51100
+[09/12 00:17:30    149s] <CMD> zoomBox 746.59200 807.50200 1122.44700 957.78900
+[09/12 00:17:30    149s] <CMD> zoomBox 845.76300 833.99600 1076.58800 926.29200
+[09/12 00:17:31    149s] <CMD> zoomBox 906.07700 850.26700 1047.83500 906.94900
+[09/12 00:17:31    149s] <CMD> zoomBox 932.71600 857.45300 1035.13600 898.40600
+[09/12 00:17:37    150s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 00:17:38    150s] <CMD> zoomBox 887.86000 850.27500 1054.63600 916.96100
+[09/12 00:17:38    150s] <CMD> zoomBox 867.34700 846.99300 1063.55400 925.44700
+[09/12 00:17:38    150s] <CMD> zoomBox 781.51000 833.24400 1101.00000 960.99300
+[09/12 00:17:40    151s] <CMD> fit
+[09/12 00:17:40    151s] <CMD> zoomBox -886.29900 164.61200 2770.93400 1626.96900
+[09/12 00:17:41    151s] <CMD> zoomBox -227.04800 453.77500 2018.95100 1351.84500
+[09/12 00:17:41    151s] <CMD> zoomBox 169.72600 635.63000 1549.05200 1187.15800
+[09/12 00:17:43    151s] <CMD> setLayerPreference Metal1 -isVisible 0
+[09/12 00:17:45    152s] <CMD> zoomBox 706.22400 784.25100 1318.23900 1028.96700
+[09/12 00:17:45    152s] <CMD> zoomBox 871.34400 829.99300 1247.19900 980.28000
+[09/12 00:17:46    152s] <CMD> zoomBox 910.76300 840.91300 1230.24000 968.65700
+[09/12 00:17:46    152s] <CMD> zoomBox 972.72000 858.05400 1203.54200 950.34900
+[09/12 00:17:48    152s] <CMD> zoomBox 1047.71500 877.77900 1134.77000 912.58800
+[09/12 00:17:48    153s] <CMD> zoomBox 1065.23600 882.38700 1118.70100 903.76500
+[09/12 00:17:50    153s] <CMD> zoomBox 1074.16600 884.98900 1107.00100 898.11800
+[09/12 00:17:50    153s] <CMD> zoomBox 1076.29800 885.61000 1104.20800 896.77000
+[09/12 00:17:50    153s] <CMD> zoomBox 1079.65000 886.58700 1099.81600 894.65000
+[09/12 00:17:51    153s] <CMD> zoomBox 1080.95900 886.96800 1098.10000 893.82200
+[09/12 00:17:54    153s] <CMD> setLayerPreference Metal2 -isVisible 0
+[09/12 00:17:56    153s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 00:17:57    153s] <CMD> zoomBox 1078.39100 886.50000 1098.55700 894.56300
+[09/12 00:17:57    154s] <CMD> zoomBox 1071.82900 885.30600 1099.74200 896.46700
+[09/12 00:17:58    154s] <CMD> fit
+[09/12 00:17:59    154s] <CMD> zoomBox -469.85200 269.13000 2638.79500 1512.13300
+[09/12 00:17:59    154s] <CMD> zoomBox -204.71800 356.71000 2437.63400 1413.26300
+[09/12 00:18:00    154s] <CMD> zoomBox 626.13800 632.79200 1798.56400 1101.59000
+[09/12 00:18:00    154s] <CMD> zoomBox 716.58600 665.82200 1713.14800 1064.30100
+[09/12 00:18:01    154s] <CMD> zoomBox 858.81400 717.76300 1578.83100 1005.66400
+[09/12 00:18:01    155s] <CMD> fit
+[09/12 00:18:08    155s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 00:18:09    155s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 00:18:10    156s] <CMD> zoomBox -829.61800 161.52100 2827.61600 1623.87800
+[09/12 00:18:10    156s] <CMD> zoomBox -44.79400 416.22600 2201.20700 1314.29700
+[09/12 00:18:11    156s] <CMD> zoomBox 650.05100 641.73000 1646.61500 1040.20900
+[09/12 00:18:11    156s] <CMD> zoomBox 994.23200 753.50500 1370.08700 903.79200
+[09/12 00:18:12    156s] <CMD> zoomBox 1093.08900 785.00700 1289.28800 863.45800
+[09/12 00:18:12    156s] <CMD> zoomBox 1109.28200 790.16700 1276.05300 856.85100
+[09/12 00:18:12    156s] <CMD> zoomBox 1144.69100 801.45000 1247.11100 842.40300
+[09/12 00:18:12    157s] <CMD> zoomBox 1166.43900 808.38000 1229.33700 833.53000
+[09/12 00:18:13    157s] <CMD> zoomBox 1171.62900 810.03400 1225.09400 831.41200
+[09/12 00:18:13    157s] <CMD> zoomBox 1179.79100 812.63500 1218.42300 828.08200
+[09/12 00:18:14    157s] <CMD> zoomBox 1185.69000 814.51400 1213.60200 825.67500
+[09/12 00:18:14    157s] <CMD> fit
+[09/12 00:18:14    157s] <CMD> zoomBox -1610.79600 -92.00100 3451.11600 1932.02100
+[09/12 00:18:15    157s] <CMD> zoomBox -948.13400 153.27600 2709.09800 1615.63200
+[09/12 00:18:16    157s] <CMD> zoomBox -283.01400 399.06500 1962.98500 1297.13500
+[09/12 00:18:16    157s] <CMD> zoomBox 125.20600 549.76300 1504.53200 1101.29100
+[09/12 00:18:17    158s] <CMD> fit
+[09/12 00:18:18    158s] <CMD> setLayerPreference Metal5 -isVisible 1
+[09/12 00:18:19    158s] <CMD> setLayerPreference Metal4 -isVisible 0
+[09/12 00:18:20    158s] <CMD> zoomBox -336.22200 270.13400 2306.12800 1326.68600
+[09/12 00:18:20    158s] <CMD> zoomBox 529.53800 516.45700 1526.10000 914.93600
+[09/12 00:18:21    158s] <CMD> zoomBox 675.01300 557.84700 1395.03000 845.74800
+[09/12 00:18:21    159s] <CMD> zoomBox 854.62100 610.03500 1230.47600 760.32200
+[09/12 00:18:22    159s] <CMD> zoomBox 884.03000 618.59700 1203.50700 746.34100
+[09/12 00:18:22    159s] <CMD> zoomBox 908.57000 629.53100 1180.12700 738.11400
+[09/12 00:18:22    159s] <CMD> zoomBox 929.25000 639.12400 1160.07500 731.42000
+[09/12 00:18:23    159s] <CMD> zoomBox 961.25300 655.19600 1128.02400 721.88000
+[09/12 00:18:23    159s] <CMD> zoomBox 984.37600 666.80800 1104.86800 714.98700
+[09/12 00:18:24    159s] <CMD> zoomBox 993.40600 671.34200 1095.82500 712.29500
+[09/12 00:18:24    159s] <CMD> zoomBox 1001.08100 675.19700 1088.13800 710.00700
+[09/12 00:18:25    159s] <CMD> fit
+[09/12 00:18:26    159s] <CMD> zoomBox -611.95300 171.68300 2496.69500 1414.68600
+[09/12 00:18:26    160s] <CMD> zoomBox 1.46100 333.61700 1910.56100 1096.97700
+[09/12 00:18:27    160s] <CMD> zoomBox 610.52000 488.82700 1330.53700 776.72800
+[09/12 00:18:27    160s] <CMD> zoomBox 760.13900 512.06400 1202.32100 688.87200
+[09/12 00:18:28    160s] <CMD> fit
+[09/12 00:18:30    160s] <CMD> setLayerPreference Metal5 -isVisible 0
+[09/12 00:18:31    160s] <CMD> setLayerPreference TopMetal1 -isVisible 1
+[09/12 00:18:32    161s] <CMD> setLayerPreference TopMetal2 -isVisible 1
+[09/12 00:18:33    161s] <CMD> zoomBox -1.72400 304.66400 2244.27500 1202.73400
+[09/12 00:18:33    161s] <CMD> zoomBox 188.84700 352.61600 2097.94700 1115.97600
+[09/12 00:18:33    161s] <CMD> zoomBox 488.52000 428.02000 1867.84600 979.54800
+[09/12 00:18:34    161s] <CMD> zoomBox 605.55500 457.46800 1777.98200 926.26700
+[09/12 00:18:34    161s] <CMD> zoomBox 861.46600 521.86100 1581.48300 809.76200
+[09/12 00:18:34    161s] <CMD> zoomBox 974.48800 550.29900 1494.70100 758.30800
+[09/12 00:18:35    162s] <CMD> zoomBox 1018.62800 561.40500 1460.80900 738.21300
+[09/12 00:18:36    162s] <CMD> zoomBox 1088.03700 578.87000 1407.51400 706.61400
+[09/12 00:18:39    162s] <CMD> fit
+[09/12 00:18:45    163s] <CMD> setLayerPreference poly -isVisible 1
+[09/12 00:18:46    163s] <CMD> setLayerPreference Cont -isVisible 1
+[09/12 00:18:47    163s] <CMD> setLayerPreference poly -isVisible 0
+[09/12 00:18:48    163s] <CMD> setLayerPreference Metal1 -isVisible 1
+[09/12 00:18:50    163s] <CMD> zoomBox -5066.90100 -1003.38300 4630.13600 2874.00900
+[09/12 00:18:50    163s] <CMD> deselectAll
+[09/12 00:20:11    171s] <CMD> zoomBox -3444.05300 -565.09600 3562.05700 2236.32000
+[09/12 00:20:11    171s] <CMD> zoomBox -1357.03900 7.38200 2300.19500 1469.73900
+[09/12 00:20:11    171s] <CMD> selectInst i_croc_soc/i_croc/_5900_
+[09/12 00:20:12    171s] <CMD> zoomBox -994.40200 123.29700 2114.24800 1366.30100
+[09/12 00:20:12    171s] <CMD> zoomBox -201.44900 376.76000 1707.65100 1140.12000
+[09/12 00:20:13    171s] <CMD> zoomBox 148.75200 488.70000 1528.08000 1040.22900
+[09/12 00:20:14    172s] <CMD> fit
+[09/12 00:20:15    172s] <CMD> zoomBox -203.08500 362.44300 2439.26700 1418.99600
+[09/12 00:21:16    177s] <CMD> zoomBox -1178.79000 143.18400 3123.84200 1863.60500
+[09/12 00:21:16    177s] <CMD> zoomBox -3096.91600 -536.10300 5145.57600 2759.68400
+[09/12 00:21:16    178s] <CMD> zoomBox -2500.95300 -320.21400 4505.16500 2481.20500
+[09/12 00:21:16    178s] <CMD> zoomBox -1563.80100 19.27200 3498.11900 2043.29700
+[09/12 00:21:17    178s] <CMD> zoomBox -206.45900 510.97200 2039.54300 1409.04300
+[09/12 00:21:17    178s] <CMD> zoomBox 230.37600 666.12100 1609.70200 1217.64900
+[09/12 00:21:17    178s] <CMD> zoomBox 582.52300 783.66400 1302.54200 1071.56600
+[09/12 00:21:20    178s] <CMD> zoomBox 643.21900 808.30700 1255.23600 1053.02400
+[09/12 00:21:20    178s] <CMD> zoomBox 807.62500 875.05700 1127.10200 1002.80100
+[09/12 00:21:21    179s] <CMD> zoomBox 876.90700 902.82300 1073.10600 981.27400
+[09/12 00:21:21    179s] <CMD> zoomBox 938.16400 927.32600 1025.22100 962.13600
+[09/12 00:21:21    179s] <CMD> zoomBox 945.36900 930.25800 1019.36700 959.84600
+[09/12 00:21:22    179s] <CMD> zoomBox 961.12100 936.66800 1006.56800 954.84000
+[09/12 00:21:23    179s] <CMD> zoomBox 966.40800 941.10600 994.32100 952.26700
+[09/12 00:21:25    179s] <CMD> deselectAll
+[09/12 00:21:25    179s] <CMD> selectInst i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OCPC6189_1358
+[09/12 00:21:26    179s] <CMD> fit
+[09/12 00:21:27    179s] <CMD> zoomBox -278.24800 430.68900 1967.75200 1328.75900
+[09/12 00:21:27    180s] <CMD> zoomBox 229.79000 629.96500 1402.21600 1098.76300
+[09/12 00:21:28    180s] <CMD> zoomBox 383.75100 690.35500 1230.83000 1029.06200
+[09/12 00:21:28    180s] <CMD> zoomBox 443.87900 713.94000 1163.89600 1001.84100
+[09/12 00:21:28    180s] <CMD> zoomBox 575.35500 765.51100 1017.53700 942.31900
+[09/12 00:21:29    180s] <CMD> zoomBox 606.74200 777.82300 982.59700 928.11000
+[09/12 00:21:29    180s] <CMD> zoomBox 656.09700 797.18300 927.65400 905.76600
+[09/12 00:21:30    180s] <CMD> zoomBox 691.75700 811.17100 887.95700 889.62200
+[09/12 00:21:30    180s] <CMD> zoomBox 717.52000 821.27600 859.27700 877.95800
+[09/12 00:21:33    181s] <CMD> setLayerPreference Metal5 -isVisible 1
+[09/12 00:21:34    181s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 00:21:38    181s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 00:21:39    181s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 00:21:40    182s] <CMD> fit
+[09/12 00:21:41    182s] <CMD> zoomBox -1210.26200 55.62200 3092.36300 1776.04100
+[09/12 00:21:42    182s] <CMD> zoomBox -143.10400 449.22700 2102.89600 1347.29700
+[09/12 00:21:42    182s] <CMD> zoomBox 623.80300 736.95700 1343.82200 1024.85900
+[09/12 00:21:43    182s] <CMD> zoomBox 680.69600 757.79700 1292.71300 1002.51400
+[09/12 00:21:43    183s] <CMD> zoomBox 881.71400 831.35100 1112.53700 923.64600
+[09/12 00:21:45    183s] <CMD> zoomBox 900.38500 838.56500 1096.58400 917.01600
+[09/12 00:21:45    183s] <CMD> zoomBox 941.20900 854.33900 1061.70300 902.51900
+[09/12 00:21:46    183s] <CMD> zoomBox 966.28100 864.02600 1040.28000 893.61500
+[09/12 00:21:47    183s] <CMD> fit
+[09/12 00:21:48    183s] <CMD> zoomBox -675.00600 368.41400 2433.64100 1611.41700
+[09/12 00:21:51    184s] <CMD> zoomBox -340.03900 749.48900 1569.06000 1512.84800
+[09/12 00:21:52    184s] <CMD> zoomBox -41.61600 1079.86000 805.46500 1418.56800
+[09/12 00:21:52    184s] <CMD> zoomBox 50.23200 1181.54000 570.44700 1389.55000
+[09/12 00:21:52    184s] <CMD> zoomBox 93.44200 1225.17600 469.30000 1375.46400
+[09/12 00:21:54    185s] <CMD> zoomBox 188.30200 1247.84600 384.50600 1326.29900
+[09/12 00:21:56    185s] <CMD> fit
+[09/12 00:21:59    185s] <CMD> zoomBox -1204.13600 5.48600 3098.49000 1725.90500
+[09/12 00:22:00    185s] <CMD> zoomBox -858.47400 88.35000 2798.75800 1550.70600
+[09/12 00:22:00    186s] <CMD> zoomBox -564.66100 158.78400 2543.98600 1401.78700
+[09/12 00:22:00    186s] <CMD> zoomBox 77.79600 312.79800 1986.89500 1076.15700
+[09/12 00:22:01    186s] <CMD> zoomBox 714.64700 465.46700 1434.66400 753.36800
+[09/12 00:22:01    186s] <CMD> zoomBox 863.45200 501.13800 1305.63300 677.94600
+[09/12 00:22:05    186s] <CMD> zoomBox 714.64300 465.46500 1434.66700 753.36900
+[09/12 00:22:05    186s] <CMD> zoomBox 646.58900 449.15100 1493.67700 787.86200
+[09/12 00:22:06    187s] <CMD> zoomBox 566.52600 429.95800 1563.10200 828.44200
+[09/12 00:22:07    187s] <CMD> zoomBox 771.35600 557.48300 1383.38100 802.20300
+[09/12 00:22:07    187s] <CMD> zoomBox 897.14800 635.80000 1273.00900 786.08900
+[09/12 00:22:07    187s] <CMD> zoomBox 992.84100 695.37800 1189.04500 773.83100
+[09/12 00:22:08    187s] <CMD> zoomBox 1008.51700 705.13800 1175.29100 771.82300
+[09/12 00:22:08    187s] <CMD> zoomBox 1021.95200 713.21400 1163.71000 769.89600
+[09/12 00:22:08    187s] <CMD> zoomBox 1051.32900 730.87200 1138.38800 765.68300
+[09/12 00:22:10    187s] <CMD> zoomBox 1060.24300 734.29200 1123.14500 759.44400
+[09/12 00:22:10    188s] <CMD> zoomBox 1063.72400 735.62800 1117.19200 757.00700
+[09/12 00:22:15    188s] <CMD> setLayerPreference TopMetal1 -isVisible 0
+[09/12 00:22:16    188s] <CMD> setLayerPreference TopMetal2 -isVisible 0
+[09/12 00:22:18    188s] <CMD> zoomBox 1052.65000 731.81600 1126.65300 761.40600
+[09/12 00:22:19    188s] <CMD> zoomBox 1037.32200 726.54000 1139.75000 767.49600
+[09/12 00:22:20    188s] <CMD> zoomBox 1027.57500 723.18400 1148.07800 771.36800
+[09/12 00:22:20    189s] <CMD> zoomBox 1016.10600 719.23700 1157.87600 775.92400
+[09/12 00:22:21    189s] <CMD> fit
+[09/12 00:22:23    189s] <CMD> zoomBox -1007.90900 119.26700 2649.32500 1581.62400
+[09/12 00:22:23    189s] <CMD> zoomBox -535.09200 312.45900 2107.26000 1369.01200
+[09/12 00:22:24    189s] <CMD> zoomBox 44.06500 555.24100 1423.39100 1106.76900
+[09/12 00:22:24    190s] <CMD> zoomBox 288.12500 657.55100 1135.20400 996.25800
+[09/12 00:22:25    190s] <CMD> zoomBox 469.92700 749.34400 912.10900 926.15200
+[09/12 00:22:25    190s] <CMD> zoomBox 499.70800 764.38100 875.56300 914.66800
+[09/12 00:22:26    190s] <CMD> zoomBox 582.48400 806.29600 778.68300 884.74700
+[09/12 00:22:26    190s] <CMD> zoomBox 608.28800 819.23800 750.04300 875.91900
+[09/12 00:27:03    214s] <CMD> zoomBox 648.84300 832.02200 711.74300 857.17300
+[09/12 00:27:03    214s] <CMD> zoomBox 661.32300 835.95600 699.95500 851.40300
+[09/12 00:27:04    215s] <CMD> zoomBox 671.38800 839.07200 691.55500 847.13600
+[09/12 00:27:04    215s] <CMD> zoomBox 673.03600 839.58200 690.18000 846.43700
+[09/12 00:27:05    215s] <CMD> zoomBox 674.43700 840.01600 689.01000 845.84300
+[09/12 00:27:06    215s] <CMD> zoomBox 667.16100 837.76300 695.08100 848.92700
+[09/12 00:27:06    215s] <CMD> zoomBox 657.59700 834.80300 703.06100 852.98200
+[09/12 00:31:36    238s] <CMD> deselectAll
+[09/12 00:31:36    238s] <CMD> selectObject Wire i_croc_soc/i_croc/i_dm_top_i_dm_top/FE_OFN9034_dmi_req_23(675740,843500,680260,843700)
+[09/12 00:31:36    239s] <CMD> fit
+[09/12 00:31:39    239s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 00:31:41    239s] <CMD> setLayerPreference Metal4 -isVisible 0
+[09/12 00:31:43    240s] <CMD> zoomBox -617.68300 227.57100 2490.96400 1470.57400
+[09/12 00:31:46    240s] <CMD> setLayerPreference Metal5 -isVisible 0
+[09/12 00:31:55    241s] <CMD> zoomBox -255.66400 457.31500 1990.33600 1355.38500
+[09/12 00:31:55    241s] <CMD> zoomBox 321.56800 714.41600 1318.13200 1112.89500
+[09/12 00:31:56    242s] <CMD> zoomBox 646.72100 838.01600 966.20100 965.76100
+[09/12 00:31:57    242s] <CMD> zoomBox 747.12100 870.22100 888.88100 926.90400
+[09/12 00:31:57    242s] <CMD> zoomBox 759.11800 874.02700 879.61400 922.20800
+[09/12 00:31:57    242s] <CMD> zoomBox 801.45900 887.46200 846.90600 905.63400
+[09/12 00:31:58    242s] <CMD> zoomBox 808.57300 889.71900 841.41100 902.84900
+[09/12 00:31:58    242s] <CMD> fit
+[09/12 00:32:23    244s] <CMD> zoomBox -503.03900 213.24200 2605.60900 1456.24500
+[09/12 00:32:24    245s] <CMD> zoomBox -13.80400 348.05000 2232.19500 1246.12000
+[09/12 00:32:24    245s] <CMD> zoomBox 477.71400 483.48700 1857.04000 1035.01500
+[09/12 00:32:29    245s] <CMD> zoomBox 625.86700 500.18500 1798.29500 968.98400
+[09/12 00:32:30    245s] <CMD> zoomBox 949.82400 536.69600 1669.84100 824.59700
+[09/12 00:32:30    246s] <CMD> zoomBox 1196.26900 564.47100 1572.12200 714.75700
+[09/12 00:32:31    246s] <CMD> deselectAll
+[09/12 03:54:34   1262s] <CMD> win
+[09/12 03:54:35   1263s] <CMD> fit
+[09/12 03:54:41   1263s] <CMD> fit
+[09/12 03:54:42   1264s] <CMD> zoomBox -283.35200 249.36000 2195.27400 1305.91300
+[09/12 03:54:42   1264s] <CMD> zoomBox 208.55200 396.01800 1730.73800 1044.87400
+[09/12 03:54:44   1264s] <CMD> fit
+[09/12 03:54:46   1264s] <CMD> zoomBox -701.86500 205.74900 2728.75900 1668.10600
+[09/12 03:54:48   1265s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:54:49   1265s] <CMD> zoomBox -160.88100 399.22100 2317.74500 1455.77400
+[09/12 03:54:50   1265s] <CMD> zoomBox 686.08800 744.76000 1480.68200 1083.46800
+[09/12 03:54:51   1265s] <CMD> zoomBox 987.31900 879.20000 1143.75800 945.88500
+[09/12 03:54:51   1265s] <CMD> zoomBox 1027.92400 897.90700 1097.34100 927.49700
+[09/12 03:54:51   1265s] <CMD> zoomBox 1040.14800 903.76300 1082.77800 921.93500
+[09/12 03:54:52   1266s] <CMD> zoomBox 1043.06500 905.16100 1079.30100 920.60700
+[09/12 03:54:53   1266s] <CMD> zoomBox 1047.44400 909.01700 1069.69900 918.50400
+[09/12 03:54:56   1266s] <CMD> zoomBox 1046.29200 907.98800 1072.47800 919.15000
+[09/12 03:54:56   1266s] <CMD> zoomBox 1044.94300 906.82500 1075.75000 919.95700
+[09/12 03:54:57   1266s] <CMD> zoomBox 1041.13200 904.03800 1083.77200 922.21400
+[09/12 03:54:57   1266s] <CMD> zoomBox 1032.52100 897.80500 1101.95600 927.40300
+[09/12 03:54:57   1266s] <CMD> zoomBox 1028.58200 894.95400 1110.27200 929.77600
+[09/12 03:54:58   1266s] <CMD> fit
+[09/12 03:54:59   1266s] <CMD> zoomBox -675.64200 352.95100 2240.38700 1595.95400
+[09/12 03:55:00   1266s] <CMD> zoomBox -9.16200 738.55800 1284.69800 1290.08600
+[09/12 03:55:00   1267s] <CMD> zoomBox 349.47800 886.46200 923.57100 1131.17800
+[09/12 03:55:01   1267s] <CMD> zoomBox 429.42400 918.95500 844.20800 1095.76300
+[09/12 03:55:05   1267s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:55:11   1268s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 03:55:13   1268s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 03:55:15   1268s] <CMD> setLayerPreference Metal5 -isVisible 1
+[09/12 03:55:17   1269s] <CMD> zoomBox 462.42700 934.52100 814.99400 1084.80800
+[09/12 03:55:17   1269s] <CMD> zoomBox 551.81900 976.68200 735.86400 1055.13400
+[09/12 03:55:17   1269s] <CMD> zoomBox 606.12600 1002.29600 687.78900 1037.10600
+[09/12 03:55:18   1269s] <CMD> zoomBox 622.84100 1010.18000 672.99300 1031.55800
+[09/12 03:55:18   1269s] <CMD> zoomBox 626.83100 1012.06100 669.46100 1030.23300
+[09/12 03:55:19   1269s] <CMD> zoomBox 633.10500 1015.02100 663.90600 1028.15000
+[09/12 03:55:19   1269s] <CMD> zoomBox 635.55600 1016.17600 661.73700 1027.33600
+[09/12 03:55:20   1269s] <CMD> zoomBox 639.76700 1017.74300 658.68300 1025.80600
+[09/12 03:55:23   1269s] <CMD> zoomBox 632.87700 1015.17900 663.67900 1028.30900
+[09/12 03:55:24   1270s] <CMD> zoomBox 629.72600 1014.00700 665.96400 1029.45400
+[09/12 03:55:24   1270s] <CMD> zoomBox 621.65800 1011.00400 671.81500 1032.38400
+[09/12 03:55:24   1270s] <CMD> zoomBox 616.52800 1009.09500 675.53600 1034.24800
+[09/12 03:55:24   1270s] <CMD> zoomBox 595.03700 1001.09800 691.12300 1042.05600
+[09/12 03:55:25   1270s] <CMD> zoomBox 585.20900 997.44000 698.25100 1045.62600
+[09/12 03:55:25   1270s] <CMD> zoomBox 525.21100 975.11200 741.76800 1067.42300
+[09/12 03:55:26   1270s] <CMD> zoomBox 477.00200 957.17100 776.73500 1084.93700
+[09/12 03:55:26   1270s] <CMD> zoomBox 446.34300 945.76200 798.97100 1096.07500
+[09/12 03:55:27   1270s] <CMD> zoomBox 317.92100 897.96900 892.11800 1142.72900
+[09/12 03:55:27   1270s] <CMD> zoomBox 427.13200 942.34700 779.76300 1092.66100
+[09/12 03:55:28   1271s] <CMD> zoomBox 451.81400 952.94100 751.55000 1080.70800
+[09/12 03:55:28   1271s] <CMD> zoomBox 518.64600 981.63600 675.11200 1048.33200
+[09/12 03:55:29   1271s] <CMD> zoomBox 553.43300 996.67000 635.11200 1031.48700
+[09/12 03:55:30   1271s] <CMD> zoomBox 568.18600 1004.09200 618.34800 1025.47400
+[09/12 03:55:31   1271s] <CMD> zoomBox 572.28200 1005.89100 614.92000 1024.06600
+[09/12 03:55:32   1271s] <CMD> zoomBox 578.72200 1008.72000 609.52900 1021.85200
+[09/12 03:55:33   1271s] <CMD> zoomBox 581.44800 1009.77800 607.63400 1020.94000
+[09/12 03:55:34   1271s] <CMD> zoomBox 583.76500 1010.67700 606.02300 1020.16500
+[09/12 03:55:35   1271s] <CMD> zoomBox 571.74200 1006.01100 614.38200 1024.18700
+[09/12 03:55:36   1271s] <CMD> zoomBox 567.29700 1004.29400 617.46300 1025.67800
+[09/12 03:55:54   1273s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:55:57   1273s] <CMD> zoomBox 558.06300 998.11900 639.75000 1032.93900
+[09/12 03:55:58   1273s] <CMD> zoomBox 549.10900 993.63000 662.17000 1041.82400
+[09/12 03:55:59   1273s] <CMD> zoomBox 574.65200 998.75100 644.08500 1028.34800
+[09/12 03:56:00   1274s] <CMD> zoomBox 600.41100 1003.02900 631.22000 1016.16200
+[09/12 03:56:02   1274s] <CMD> fit
+[09/12 03:56:03   1274s] <CMD> zoomBox -812.07000 139.04600 2618.55200 1601.40200
+[09/12 03:56:04   1274s] <CMD> zoomBox 138.64600 486.28800 1660.83600 1135.14500
+[09/12 03:56:04   1274s] <CMD> zoomBox 433.41000 597.59100 1368.22700 996.07100
+[09/12 03:56:05   1274s] <CMD> zoomBox 618.93000 672.22200 1193.02700 916.94000
+[09/12 03:56:05   1275s] <CMD> zoomBox 662.71400 689.97600 1150.69600 897.98600
+[09/12 03:56:06   1275s] <CMD> zoomBox 731.56300 717.89300 1084.13200 868.18100
+[09/12 03:56:07   1275s] <CMD> zoomBox 782.59900 740.21700 1037.33100 848.80000
+[09/12 03:56:07   1275s] <CMD> zoomBox 819.19300 756.52500 1003.23800 834.97700
+[09/12 03:56:07   1275s] <CMD> zoomBox 833.00500 763.08700 989.44500 829.77200
+[09/12 03:56:07   1275s] <CMD> zoomBox 870.42100 780.86200 952.08400 815.67200
+[09/12 03:56:08   1275s] <CMD> zoomBox 876.55000 783.77300 945.96400 813.36200
+[09/12 03:56:08   1275s] <CMD> zoomBox 881.84400 786.25500 940.84600 811.40600
+[09/12 03:56:08   1275s] <CMD> zoomBox 893.38500 791.68400 929.62100 807.13000
+[09/12 03:56:09   1275s] <CMD> zoomBox 896.14100 792.98000 926.94100 806.10900
+[09/12 03:56:12   1276s] <CMD> zoomBox 893.39300 791.68400 929.62900 807.13000
+[09/12 03:56:12   1276s] <CMD> zoomBox 886.36800 788.36500 936.52200 809.74400
+[09/12 03:56:13   1276s] <CMD> zoomBox 881.70500 784.85200 940.71000 810.00400
+[09/12 03:56:14   1276s] <CMD> zoomBox 862.17400 770.13600 958.25500 811.09200
+[09/12 03:56:16   1276s] <CMD> zoomBox 889.02700 772.69600 939.18400 794.07600
+[09/12 03:56:17   1276s] <CMD> zoomBox 903.61300 773.89400 925.86700 783.38000
+[09/12 03:56:18   1276s] <CMD> zoomBox 905.16000 774.20700 924.07800 782.27100
+[09/12 03:56:18   1276s] <CMD> zoomBox 907.59400 774.70000 921.26200 780.52600
+[09/12 03:56:22   1277s] <CMD> zoomBox 906.48100 774.41700 922.56100 781.27100
+[09/12 03:56:22   1277s] <CMD> zoomBox 901.81700 773.23000 928.00200 784.39200
+[09/12 03:56:23   1277s] <CMD> zoomBox 890.74900 770.41400 940.91600 791.79800
+[09/12 03:56:23   1277s] <CMD> zoomBox 869.54800 765.02000 965.65500 805.98700
+[09/12 03:56:24   1277s] <CMD> zoomBox 861.72000 763.02900 974.78800 811.22600
+[09/12 03:56:26   1277s] <CMD> zoomBox 873.60200 769.30000 969.71100 810.26800
+[09/12 03:56:26   1277s] <CMD> zoomBox 883.70300 774.64100 965.39600 809.46400
+[09/12 03:56:26   1277s] <CMD> zoomBox 892.26100 779.36100 961.70100 808.96100
+[09/12 03:56:27   1277s] <CMD> zoomBox 899.49800 783.44200 958.52200 808.60200
+[09/12 03:56:27   1277s] <CMD> zoomBox 905.64900 786.91100 955.82000 808.29700
+[09/12 03:56:27   1277s] <CMD> zoomBox 915.07600 791.78300 951.32600 807.23500
+[09/12 03:56:28   1277s] <CMD> zoomBox 918.75800 793.68500 949.57100 806.82000
+[09/12 03:56:29   1277s] <CMD> zoomBox 910.07300 790.22900 952.72300 808.40900
+[09/12 03:56:29   1277s] <CMD> zoomBox 904.55100 788.03000 954.72800 809.41900
+[09/12 03:56:29   1277s] <CMD> zoomBox 898.05900 785.44400 957.09300 810.60800
+[09/12 03:56:29   1278s] <CMD> zoomBox 870.87100 774.61300 967.00000 815.58900
+[09/12 03:56:31   1278s] <CMD> zoomBox 885.26600 786.26000 944.30200 811.42500
+[09/12 03:56:31   1278s] <CMD> zoomBox 896.65500 795.22400 927.47400 808.36100
+[09/12 03:56:35   1278s] <CMD> zoomBox 888.35700 788.78600 938.54200 810.17800
+[09/12 03:56:35   1278s] <CMD> zoomBox 880.09800 782.46400 949.55900 812.07300
+[09/12 03:56:36   1278s] <CMD> zoomBox 868.80400 773.71500 964.94400 814.69600
+[09/12 03:56:37   1278s] <CMD> zoomBox 873.42300 783.13000 942.88500 812.73900
+[09/12 03:56:40   1279s] <CMD> zoomBox 874.12600 786.52400 933.16900 811.69200
+[09/12 03:56:40   1279s] <CMD> zoomBox 875.66200 793.94500 911.92300 809.40200
+[09/12 03:56:41   1279s] <CMD> zoomBox 876.47300 797.47400 902.67300 808.64200
+[09/12 03:56:41   1279s] <CMD> zoomBox 876.81900 798.89800 899.08900 808.39100
+[09/12 03:56:42   1279s] <CMD> zoomBox 876.06800 797.55400 902.27000 808.72300
+[09/12 03:56:43   1279s] <CMD> zoomBox 873.58700 795.11700 909.85300 810.57600
+[09/12 03:56:43   1279s] <CMD> zoomBox 867.96700 789.60000 927.02200 814.77300
+[09/12 03:56:46   1279s] <CMD> zoomBox 873.97200 792.46600 924.16900 813.86300
+[09/12 03:56:46   1279s] <CMD> zoomBox 883.42400 796.97300 919.69200 812.43300
+[09/12 03:56:46   1279s] <CMD> zoomBox 890.25400 800.22900 916.45800 811.39900
+[09/12 03:56:46   1279s] <CMD> zoomBox 892.92600 801.46000 915.20100 810.95500
+[09/12 03:56:47   1279s] <CMD> zoomBox 895.19800 802.50600 914.13200 810.57700
+[09/12 03:56:49   1280s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:56:50   1280s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:56:51   1280s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:56:51   1280s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:56:55   1280s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:56:57   1280s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 03:56:58   1281s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 03:56:59   1281s] <CMD> setLayerPreference Metal5 -isVisible 1
+[09/12 03:57:01   1281s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 03:57:04   1281s] <CMD> setLayerPreference TopMetal1 -isVisible 1
+[09/12 03:57:05   1281s] <CMD> setLayerPreference TopMetal2 -isVisible 1
+[09/12 03:57:06   1281s] <CMD> setLayerPreference Metal1 -isVisible 1
+[09/12 03:57:09   1282s] <CMD> zoomBox 892.15000 801.85600 914.42700 811.35200
+[09/12 03:57:09   1282s] <CMD> zoomBox 888.79800 801.02200 915.00700 812.19400
+[09/12 03:57:09   1282s] <CMD> zoomBox 880.26600 798.88000 916.54400 814.34400
+[09/12 03:57:11   1282s] <CMD> zoomBox 875.04800 797.17000 917.72800 815.36300
+[09/12 03:57:12   1282s] <CMD> zoomBox 868.90900 795.15800 919.12100 816.56200
+[09/12 03:57:12   1282s] <CMD> zoomBox 884.36000 799.19100 915.19800 812.33600
+[09/12 03:57:15   1282s] <CMD> fit
+[09/12 03:57:16   1282s] <CMD> zoomBox -364.90500 246.75400 2551.12400 1489.75700
+[09/12 03:57:16   1283s] <CMD> zoomBox 487.83400 569.28200 1781.69300 1120.81000
+[09/12 03:57:17   1283s] <CMD> zoomBox 796.83300 701.77500 1472.23800 989.67700
+[09/12 03:57:18   1283s] <CMD> zoomBox 881.72000 742.75200 1369.70100 950.76200
+[09/12 03:57:19   1283s] <CMD> zoomBox 916.41000 759.56100 1331.19600 936.37000
+[09/12 03:57:19   1283s] <CMD> zoomBox 992.26900 796.31500 1247.00000 904.89800
+[09/12 03:57:19   1283s] <CMD> zoomBox 1011.89200 805.51000 1228.41400 897.80600
+[09/12 03:57:20   1284s] <CMD> zoomBox 1042.74800 819.96800 1199.18800 886.65300
+[09/12 03:57:21   1284s] <CMD> zoomBox 1075.30000 834.49500 1171.37400 875.44800
+[09/12 03:57:21   1284s] <CMD> zoomBox 1089.68600 840.91100 1159.09900 870.49900
+[09/12 03:57:22   1284s] <CMD> zoomBox 1094.41500 843.14900 1153.41600 868.29900
+[09/12 03:57:23   1284s] <CMD> zoomBox 1101.84900 846.66700 1144.47900 864.83900
+[09/12 03:57:25   1284s] <CMD> fit
+[09/12 03:57:26   1284s] <CMD> zoomBox -1117.44900 72.08000 2918.57600 1792.49900
+[09/12 03:57:27   1285s] <CMD> zoomBox 275.25400 752.56200 1375.03500 1221.36100
+[09/12 03:57:27   1285s] <CMD> zoomBox 722.58400 969.84700 939.10500 1062.14200
+[09/12 03:57:28   1285s] <CMD> zoomBox 740.12200 978.25800 924.16500 1056.70900
+[09/12 03:57:28   1285s] <CMD> zoomBox 767.69900 991.48400 900.67200 1048.16600
+[09/12 03:57:29   1285s] <CMD> zoomBox 807.33500 1006.82500 876.75000 1036.41400
+[09/12 03:57:31   1285s] <CMD> fit
+[09/12 03:57:33   1286s] <CMD> zoomBox -230.06600 314.30200 2248.55900 1370.85500
+[09/12 03:57:34   1286s] <CMD> zoomBox 285.69400 485.52000 1807.88100 1134.37600
+[09/12 03:57:35   1286s] <CMD> zoomBox 738.63300 638.37900 1414.03600 926.28000
+[09/12 03:57:35   1286s] <CMD> zoomBox 939.86400 732.20500 1194.59300 840.78700
+[09/12 03:57:35   1286s] <CMD> zoomBox 1015.75600 767.59100 1111.83000 808.54400
+[09/12 03:57:36   1286s] <CMD> zoomBox 1037.72300 777.83300 1087.87500 799.21100
+[09/12 03:57:38   1287s] <CMD> fit
+[09/12 03:57:40   1287s] <CMD> zoomBox -1113.26900 66.85500 2922.75700 1787.27400
+[09/12 03:57:41   1287s] <CMD> zoomBox -368.27600 414.21300 2110.34900 1470.76600
+[09/12 03:57:41   1287s] <CMD> zoomBox 198.46400 678.46000 1492.32300 1229.98800
+[09/12 03:57:42   1288s] <CMD> zoomBox 333.07200 760.12100 1267.88600 1158.60000
+[09/12 03:57:43   1288s] <CMD> zoomBox 529.56100 877.63200 944.34500 1054.44000
+[09/12 03:57:43   1288s] <CMD> zoomBox 556.67500 891.82800 909.24200 1042.11500
+[09/12 03:57:44   1288s] <CMD> zoomBox 615.96300 922.86900 832.48500 1015.16500
+[09/12 03:57:45   1288s] <CMD> zoomBox 630.18900 930.28000 814.23200 1008.73100
+[09/12 03:57:45   1288s] <CMD> zoomBox 642.28100 936.57900 798.71700 1003.26200
+[09/12 03:57:46   1288s] <CMD> zoomBox 652.80000 942.01900 785.77100 998.70000
+[09/12 03:57:46   1289s] <CMD> zoomBox 675.80100 953.91500 757.46200 988.72400
+[09/12 03:57:50   1289s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:57:51   1289s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:57:52   1289s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:57:55   1289s] <CMD> zoomBox 663.55700 950.26700 759.62900 991.21900
+[09/12 03:57:56   1289s] <CMD> zoomBox 649.15300 945.97600 762.17900 994.15500
+[09/12 03:57:57   1290s] <CMD> zoomBox 612.26800 934.98700 768.70800 1001.67200
+[09/12 03:57:58   1290s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:57:59   1290s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:58:00   1290s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:58:04   1290s] <CMD> selectInst FILLER__6_3323
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM1 -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM2 -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:05   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:06   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:07   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:08   1291s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:10   1291s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 03:58:11   1291s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 03:58:16   1292s] <CMD> deselectAll
+[09/12 03:58:16   1292s] <CMD> selectInst i_croc_soc/i_croc/i_gpio/i_reg_file_read_addr_q_8__reg
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM1 -isVisible 1
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:16   1292s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:17   1292s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM2 -isVisible 1
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:18   1292s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:19   1292s] <CMD> zoomBox 595.88200 929.01200 779.92900 1007.46500
+[09/12 03:58:20   1292s] <CMD> zoomBox 527.24000 903.98200 826.93300 1031.73100
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM2 -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:20   1293s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:21   1293s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:22   1293s] <CMD> zoomBox 577.65000 926.06500 761.70200 1004.52000
+[09/12 03:58:23   1293s] <CMD> zoomBox 619.88400 945.74600 701.55200 980.55800
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:24   1293s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:27   1293s] <CMD> zoomBox 606.06200 939.32400 719.10000 987.50800
+[09/12 03:58:27   1293s] <CMD> zoomBox 597.20600 936.45500 730.19400 993.14300
+[09/12 03:58:29   1294s] <CMD> zoomBox 625.25500 937.54600 706.92600 972.36000
+[09/12 03:58:29   1294s] <CMD> zoomBox 631.88700 938.15700 701.30900 967.74900
+[09/12 03:58:29   1294s] <CMD> zoomBox 642.31600 939.11800 692.47500 960.49900
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:30   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:31   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:32   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:33   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:35   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:36   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:37   1294s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:38   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:39   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:40   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:41   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:42   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:43   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:44   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:45   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:46   1295s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:47   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/12 03:58:48   1296s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:49   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:50   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:52   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:53   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:58:54   1296s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:58:55   1296s] <CMD> zoomBox 648.45400 941.34400 684.69400 956.79200
+[09/12 03:58:56   1296s] <CMD> zoomBox 654.61800 943.57900 676.87600 953.06700
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:59:00   1297s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/12 03:59:01   1297s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/12 03:59:03   1297s] <CMD> zoomBox 655.59800 944.44800 674.51700 952.51300
+[09/12 03:59:03   1297s] <CMD> zoomBox 658.25000 946.80200 668.12800 951.01300
+[09/12 03:59:04   1297s] <CMD> zoomBox 659.73200 948.11000 664.88900 950.30800
+[09/12 03:59:05   1297s] <CMD> zoomBox 660.42400 948.60900 664.14900 950.19700
+[09/12 03:59:06   1297s] <CMD> zoomBox 660.69300 948.80400 663.86000 950.15400
+[09/12 03:59:08   1297s] <CMD> zoomBox 659.18800 947.88000 665.25500 950.46600
+[09/12 03:59:08   1298s] <CMD> zoomBox 655.24200 945.45800 668.91500 951.28600
+[09/12 03:59:09   1298s] <CMD> zoomBox 650.78500 942.72200 673.04900 952.21200
+[09/12 03:59:09   1298s] <CMD> zoomBox 636.30100 933.87300 686.48600 955.26500
+[09/12 03:59:10   1298s] <CMD> zoomBox 624.84600 929.50300 694.30600 959.11100
+[09/12 03:59:11   1298s] <CMD> zoomBox 608.99000 923.45400 705.13000 964.43500
+[09/12 03:59:11   1298s] <CMD> zoomBox 598.90700 919.60800 712.01300 967.82100
+[09/12 03:59:12   1298s] <CMD> zoomBox 573.09000 909.75900 729.63800 976.49000
+[09/12 03:59:12   1298s] <CMD> zoomBox 514.63300 887.45800 769.54900 996.12000
+[09/12 03:59:19   1299s] <CMD> zoomBox 569.63800 910.32700 726.19100 977.06000
+[09/12 03:59:19   1299s] <CMD> zoomBox 602.19400 929.37600 683.91700 964.21200
+[09/12 03:59:19   1299s] <CMD> zoomBox 626.34800 943.50900 652.54900 954.67800
+[09/12 03:59:36   1300s] <CMD> zoomBox 612.75700 939.98800 662.95300 961.38500
+[09/12 03:59:36   1300s] <CMD> zoomBox 607.73900 938.68800 666.79400 963.86100
+[09/12 03:59:37   1300s] <CMD> zoomBox 565.79800 927.82200 698.89800 984.55800
+[09/12 03:59:38   1300s] <CMD> zoomBox 536.84300 920.32100 721.06400 998.84800
+[09/12 04:00:05   1303s] <CMD> zoomBox 557.90700 924.96400 714.49500 991.71200
+[09/12 04:00:05   1303s] <CMD> zoomBox 592.64900 937.27000 688.81500 978.26200
+[09/12 04:00:06   1303s] <CMD> zoomBox 612.38100 945.31700 671.44000 970.49200
+[09/12 04:00:09   1303s] <CMD> deselectAll
+[09/12 04:00:09   1303s] <CMD> selectInst i_croc_soc/i_croc/i_dm_top_i_dm_top/ictc_postCTS_setupFE_OFC12742_3300
+[09/12 04:00:10   1303s] <CMD> fit
+[09/12 04:00:11   1303s] <CMD> zoomBox -233.39800 400.89100 2245.23000 1457.44500
+[09/12 04:00:11   1304s] <CMD> zoomBox 507.11200 700.33300 1606.89300 1169.13200
+[09/12 04:00:12   1304s] <CMD> zoomBox 789.04700 814.49600 1363.14000 1059.21200
+[09/12 04:00:12   1304s] <CMD> zoomBox 877.30100 856.75300 1229.86600 1007.03900
+[09/12 04:00:13   1304s] <CMD> zoomBox 898.37000 866.84100 1198.05000 994.58400
+[09/12 04:00:13   1304s] <CMD> zoomBox 964.66200 898.64000 1097.63300 955.32100
+[09/12 04:00:14   1304s] <CMD> zoomBox 973.07600 902.60600 1086.10200 950.78500
+[09/12 04:00:14   1304s] <CMD> zoomBox 986.30700 908.84100 1067.96900 943.65100
+[09/12 04:00:17   1305s] <CMD> setLayerPreference node_layer -isVisible 1
+[09/12 04:00:18   1305s] <CMD> setLayerPreference node_layer -isVisible 0
+[09/12 04:00:19   1305s] <CMD> setLayerPreference poly -isVisible 1
+[09/12 04:00:19   1305s] <CMD> setLayerPreference poly -isVisible 0
+[09/12 04:00:20   1305s] <CMD> setLayerPreference Metal1 -isVisible 1
+[09/12 04:00:21   1305s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 04:00:23   1305s] <CMD> setLayerPreference Metal2 -isVisible 0
+[09/12 04:00:24   1305s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 04:00:25   1305s] <CMD> fit
+[09/12 04:00:26   1306s] <CMD> zoomBox -428.11600 389.93300 2050.50800 1446.48500
+[09/12 04:00:27   1306s] <CMD> zoomBox 89.94700 645.48700 1383.80500 1197.01400
+[09/12 04:00:27   1306s] <CMD> zoomBox 352.95100 746.95200 1147.54100 1085.65800
+[09/12 04:00:27   1306s] <CMD> zoomBox 415.73600 771.17400 1091.13900 1059.07500
+[09/12 04:00:28   1306s] <CMD> zoomBox 585.80100 836.78300 938.36600 987.06900
+[09/12 04:00:28   1306s] <CMD> zoomBox 616.25900 846.75400 915.94000 974.49800
+[09/12 04:00:29   1306s] <CMD> zoomBox 682.85800 868.55800 866.90100 947.00900
+[09/12 04:00:35   1307s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 04:00:37   1307s] <CMD> zoomBox 630.19300 851.54700 884.92600 960.13100
+[09/12 04:00:37   1307s] <CMD> zoomBox 557.66600 828.11300 910.23800 978.40200
+[09/12 04:00:38   1307s] <CMD> zoomBox 490.40400 790.65700 978.39400 998.67000
+[09/12 04:00:39   1308s] <CMD> zoomBox 397.30800 738.81400 1072.72700 1026.72200
+[09/12 04:00:40   1308s] <CMD> zoomBox 504.42800 788.31800 992.42000 996.33200
+[09/12 04:00:40   1308s] <CMD> zoomBox 546.26400 807.65100 961.05700 984.46300
+[09/12 04:00:49   1309s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 04:00:50   1309s] <CMD> setLayerPreference Via3 -isVisible 1
+[09/12 04:00:52   1309s] <CMD> setLayerPreference Via3 -isVisible 0
+[09/12 04:00:53   1309s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 04:00:55   1310s] <CMD> zoomBox 668.40500 849.97300 852.45500 928.42700
+[09/12 04:00:55   1310s] <CMD> zoomBox 682.92800 855.03700 839.37000 921.72300
+[09/12 04:00:56   1310s] <CMD> zoomBox 714.68200 866.10900 810.75800 907.06300
+[09/12 04:00:57   1310s] <CMD> fit
+[09/12 04:01:01   1311s] <CMD> zoomBox -761.80000 152.58000 2668.82200 1614.93600
+[09/12 04:01:02   1311s] <CMD> zoomBox -66.39700 398.30100 2040.43500 1296.37100
+[09/12 04:01:02   1311s] <CMD> zoomBox 462.61700 585.22900 1562.40100 1054.02900
+[09/12 04:01:02   1311s] <CMD> zoomBox 602.78500 641.65400 1397.37900 980.36200
+[09/12 04:01:03   1311s] <CMD> zoomBox 743.60500 698.34200 1231.58700 906.35200
+[09/12 04:01:03   1311s] <CMD> zoomBox 777.22200 711.87500 1192.00800 888.68400
+[09/12 04:01:04   1311s] <CMD> zoomBox 805.79700 723.37800 1158.36600 873.66600
+[09/12 04:01:04   1312s] <CMD> zoomBox 830.08600 733.19400 1129.77000 860.93900
+[09/12 04:01:05   1312s] <CMD> zoomBox 883.19700 754.65900 1067.24000 833.11000
+[09/12 04:01:05   1312s] <CMD> zoomBox 895.87600 759.80300 1052.31300 826.48700
+[09/12 04:01:06   1312s] <CMD> zoomBox 906.65200 764.17500 1039.62500 820.85700
+[09/12 04:01:09   1312s] <CMD> zoomBox 915.79700 767.96500 1028.82500 816.14500
+[09/12 04:01:09   1312s] <CMD> zoomBox 923.57100 771.18700 1019.64500 812.14000
+[09/12 04:01:17   1313s] <CMD> setLayerPreference Metal5 -isVisible 1
+[09/12 04:01:20   1313s] <CMD> zoomBox 867.54700 751.95200 1051.59400 830.40500
+[09/12 04:01:21   1313s] <CMD> zoomBox 793.89900 726.66800 1093.59200 854.41700
+[09/12 04:01:21   1314s] <CMD> zoomBox 673.97700 685.49700 1161.98000 893.51600
+[09/12 04:01:24   1314s] <CMD> setLayerPreference Metal4 -isVisible 0
+[09/12 04:01:26   1314s] <CMD> setLayerPreference Metal2 -isVisible 0
+[09/12 04:01:27   1314s] <CMD> zoomBox 742.13400 713.01800 1094.71800 863.31200
+[09/12 04:01:28   1315s] <CMD> zoomBox 767.93800 723.76600 1067.63400 851.51600
+[09/12 04:01:28   1315s] <CMD> zoomBox 824.36000 747.26800 1008.41200 825.72300
+[09/12 04:01:28   1315s] <CMD> zoomBox 837.82900 752.87900 994.27400 819.56600
+[09/12 04:01:29   1315s] <CMD> zoomBox 859.01000 761.70100 972.04200 809.88300
+[09/12 04:01:29   1315s] <CMD> zoomBox 867.28100 765.17100 963.35900 806.12600
+[09/12 04:01:29   1315s] <CMD> zoomBox 885.36700 772.75900 944.37500 797.91200
+[09/12 04:01:34   1315s] <CMD> setLayerPreference Metal1 -isVisible 0
+[09/12 04:01:54   1317s] <CMD> deselectAll
+[09/12 04:01:54   1317s] <CMD> selectInst FILLER__2_3728
+[09/12 04:01:55   1317s] <CMD> fit
+[09/12 04:02:01   1318s] <CMD> zoomBox -1087.66400 167.18500 2948.36200 1887.60400
+[09/12 04:02:02   1318s] <CMD> zoomBox 60.47600 980.93300 1851.28500 1744.29300
+[09/12 04:02:02   1318s] <CMD> zoomBox 401.53800 1229.35800 1501.31900 1698.15700
+[09/12 04:02:06   1318s] <CMD> zoomBox 179.95200 1092.71300 1702.14000 1741.56900
+[09/12 04:02:08   1319s] <CMD> fit
+[09/12 04:02:09   1319s] <CMD> zoomBox -762.76600 320.79000 2667.85600 1783.14600
+[09/12 04:02:09   1319s] <CMD> zoomBox -264.06800 618.33300 2214.55800 1674.88600
+[09/12 04:02:09   1319s] <CMD> zoomBox -69.30600 734.53600 2037.52600 1632.60600
+[09/12 04:02:10   1319s] <CMD> zoomBox 236.95600 917.26400 1759.14500 1566.12100
+[09/12 04:02:10   1319s] <CMD> zoomBox 356.23000 988.12500 1650.09000 1539.65300
+[09/12 04:02:11   1320s] <CMD> zoomBox 543.78700 1099.55300 1478.60100 1498.03200
+[09/12 04:02:11   1320s] <CMD> zoomBox 654.67200 1167.49800 1330.07700 1455.40000
+[09/12 04:02:11   1320s] <CMD> zoomBox 697.85700 1194.03300 1271.95200 1438.75000
+[09/12 04:02:12   1320s] <CMD> zoomBox 734.24800 1216.58800 1222.23000 1424.59800
+[09/12 04:02:13   1320s] <CMD> zoomBox 832.64700 1277.68100 1087.37800 1386.26400
+[09/12 04:02:21   1321s] <CMD> fit
+[09/12 04:02:26   1321s] <CMD> zoomBox -1124.76500 103.95600 2911.26100 1824.37500
+[09/12 04:02:26   1322s] <CMD> zoomBox -458.86800 543.86700 2019.75700 1600.42000
+[09/12 04:02:27   1322s] <CMD> zoomBox -281.29200 640.43000 1825.54000 1538.50000
+[09/12 04:02:34   1322s] <CMD> zoomBox -129.65600 722.04500 1661.15100 1485.40400
+[09/12 04:02:34   1323s] <CMD> zoomBox 348.35200 979.32100 1142.94400 1318.02800
+[09/12 04:02:35   1323s] <CMD> zoomBox 565.78400 1090.55700 918.35100 1240.84400
+[09/12 04:02:35   1323s] <CMD> zoomBox 592.82800 1103.28400 892.51000 1231.02800
+[09/12 04:02:36   1323s] <CMD> zoomBox 635.35300 1123.29600 851.87500 1215.59200
+[09/12 04:02:39   1323s] <CMD> zoomBox 615.81300 1114.10100 870.54600 1222.68500
+[09/12 04:02:39   1323s] <CMD> zoomBox 496.53000 1057.96800 984.52200 1265.98200
+[09/12 04:02:40   1324s] <CMD> zoomBox 400.68400 1012.86400 1076.10500 1300.77300
+[09/12 04:02:41   1324s] <CMD> zoomBox 268.02200 950.43500 1202.86400 1348.92600
+[09/12 04:02:41   1324s] <CMD> zoomBox 84.40900 864.02900 1378.30900 1415.57400
+[09/12 04:02:45   1324s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 04:02:47   1325s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 04:02:51   1325s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 04:02:52   1326s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 04:02:56   1326s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 04:02:58   1326s] <CMD> zoomBox -278.07400 621.50400 2200.63200 1678.09100
+[09/12 04:02:59   1327s] <CMD> zoomBox -754.56700 302.69900 3281.59500 2023.17600
+[09/12 04:03:00   1327s] <CMD> zoomBox 214.01400 588.69000 2320.91700 1486.79000
+[09/12 04:03:00   1327s] <CMD> zoomBox 537.64900 703.66000 1831.55200 1255.20600
+[09/12 04:03:01   1327s] <CMD> zoomBox 775.81900 897.46800 1349.93200 1142.19300
+[09/12 04:03:01   1327s] <CMD> zoomBox 824.09000 982.47300 1176.67000 1132.76600
+[09/12 04:03:02   1328s] <CMD> zoomBox 845.33700 1018.36500 1100.07700 1126.95200
+[09/12 04:03:03   1328s] <CMD> zoomBox 908.58500 1047.27100 1041.56200 1103.95500
+[09/12 04:03:05   1328s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 04:03:07   1328s] <CMD> setLayerPreference Metal4 -isVisible 1
+[09/12 04:03:08   1328s] <CMD> setLayerPreference Metal4 -isVisible 0
+[09/12 04:03:09   1329s] <CMD> setLayerPreference Metal3 -isVisible 1
+[09/12 04:03:10   1329s] <CMD> setLayerPreference Metal1 -isVisible 1
+[09/12 04:03:17   1330s] <CMD> zoomBox 891.65900 1042.20900 1048.10400 1108.89600
+[09/12 04:03:18   1330s] <CMD> zoomBox 820.76400 1021.00500 1075.50900 1129.59400
+[09/12 04:03:18   1330s] <CMD> zoomBox 590.42000 952.11300 1164.55300 1196.84600
+[09/12 04:03:19   1330s] <CMD> zoomBox 517.34900 930.25800 1192.80000 1218.18000
+[09/12 04:03:29   1331s] <CMD> zoomBox 398.95700 869.73100 1333.84000 1268.23900
+[09/12 04:03:30   1331s] <CMD> zoomBox 235.09400 785.95500 1529.05300 1337.52500
+[09/12 04:03:37   1332s] <CMD> zoomBox 391.05100 897.65500 1325.93800 1296.16500
+[09/12 04:03:37   1332s] <CMD> zoomBox 546.94100 1010.14000 1121.08100 1254.87600
+[09/12 04:03:38   1332s] <CMD> zoomBox 583.52400 1036.10900 1071.54400 1244.13500
+[09/12 04:03:38   1332s] <CMD> zoomBox 663.51900 1092.89300 963.22500 1220.64700
+[09/12 04:03:39   1333s] <CMD> zoomBox 682.68200 1106.38300 937.43200 1214.97400
+[09/12 04:03:39   1333s] <CMD> zoomBox 734.58600 1142.92200 867.56900 1199.60800
+[09/12 04:03:39   1333s] <CMD> zoomBox 743.08900 1148.86400 856.12400 1197.04700
+[09/12 04:03:40   1333s] <CMD> zoomBox 756.45700 1158.20700 838.12700 1193.02000
+[09/12 04:03:40   1333s] <CMD> zoomBox 761.67900 1161.85600 831.09800 1191.44700
+[09/12 04:03:41   1333s] <CMD> zoomBox 773.09700 1169.83500 815.73000 1188.00800
+[09/12 04:03:42   1333s] <CMD> zoomBox 761.36200 1162.13000 830.78400 1191.72200
+[09/12 04:03:43   1333s] <CMD> zoomBox 755.99600 1158.60700 837.66900 1193.42100
+[09/12 04:03:43   1333s] <CMD> zoomBox 733.51800 1143.84800 866.50900 1200.53700
+[09/12 04:03:43   1333s] <CMD> zoomBox 696.91500 1119.81300 913.47200 1212.12400
+[09/12 04:03:48   1334s] <CMD> zoomBox 577.99100 1041.92500 1066.05800 1249.97100
+[09/12 04:03:48   1334s] <CMD> zoomBox 496.02100 990.99700 1171.54700 1278.95000
+[09/12 04:03:49   1334s] <CMD> zoomBox 125.67700 788.09200 1648.14600 1437.06800
+[09/12 04:03:49   1334s] <CMD> zoomBox -716.36600 358.51800 2714.90100 1821.14900
+[09/12 04:03:50   1334s] <CMD> zoomBox -983.80800 224.35300 3052.97800 1945.09600
+[09/12 04:03:50   1334s] <CMD> zoomBox -2104.09000 -337.64800 4469.14500 2464.29600
+[09/12 04:04:17   1337s] <CMD> setLayerPreference Metal2 -isVisible 1
+[09/12 04:04:18   1337s] <CMD> zoomBox -941.01100 99.66900 3095.77900 1820.41400
+[09/12 04:04:18   1337s] <CMD> zoomBox -663.35300 204.06900 2767.91900 1666.70200
+[09/12 04:04:19   1337s] <CMD> zoomBox -226.73500 368.23800 2252.35900 1424.99000
+[09/12 04:04:22   1338s] <CMD> zoomBox -98.23300 455.81500 2008.99700 1354.05500
+[09/12 04:04:22   1338s] <CMD> zoomBox 396.33100 792.80300 1071.86200 1080.75900
+[09/12 04:04:23   1338s] <CMD> zoomBox 486.82500 879.27300 839.45800 1029.58800
+[09/12 04:04:23   1338s] <CMD> zoomBox 518.05400 905.90800 772.83200 1014.51100
+[09/12 04:04:24   1338s] <CMD> zoomBox 560.85100 935.30300 693.84800 991.99500
+[09/12 04:04:25   1339s] <CMD> zoomBox 574.52500 943.94100 670.61600 984.90100
+[09/12 04:04:26   1339s] <CMD> zoomBox 584.69800 950.06400 654.12400 979.65800
+[09/12 04:04:26   1339s] <CMD> zoomBox 597.36200 957.65600 633.60400 973.10500
+[09/12 04:04:26   1339s] <CMD> zoomBox 603.98200 961.55700 622.90200 969.62200
+[09/12 04:04:27   1339s] <CMD> zoomBox 602.70600 960.80500 624.96500 970.29300
+[09/12 04:04:28   1339s] <CMD> zoomBox 597.35900 957.65400 633.60600 973.10500
+[09/12 04:04:28   1339s] <CMD> zoomBox 592.03600 954.51800 642.20700 975.90400
+[09/12 04:04:31   1339s] <CMD> setLayerPreference Metal1 -isVisible 0
+[09/12 04:04:32   1339s] <CMD> setLayerPreference Metal2 -isVisible 0
+[09/12 04:04:33   1339s] <CMD> setLayerPreference Metal3 -isVisible 0
+[09/12 04:04:34   1340s] <CMD> setLayerPreference Metal5 -isVisible 0
+[09/12 04:04:35   1340s] <CMD> zoomBox 587.05400 952.46500 646.07800 977.62500
+[09/12 04:04:35   1340s] <CMD> zoomBox 566.18300 943.86600 662.29600 984.83600
+[09/12 04:04:35   1340s] <CMD> zoomBox 545.40800 935.30700 678.43900 992.01400
+[09/12 04:04:36   1340s] <CMD> zoomBox 498.36900 915.92700 714.98900 1008.26500
+[09/12 04:04:36   1340s] <CMD> zoomBox 421.77400 884.37000 774.50700 1034.72800

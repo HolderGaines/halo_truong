@@ -1,0 +1,1427 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	-log ./log/PD1_20250907_143130.log 
+Date:		Sun Sep  7 14:31:30 2025
+Host:		ictc-eda-be-9-ldap-1 (x86_64 w/Linux 5.14.0-570.33.2.el9_6.x86_64) (20cores*28cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		Rocky Linux release 9.6 (Blue Onyx)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (321 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setMultiCpuUsage -localCpu 4
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> set init_verilog /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/netlist/croc_chip_yosys.v
+<CMD> set init_design_uniquify 1
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell croc_chip
+<CMD> set init_lef_file { /ictc/student_data/share/pd/data/user_setting/sg13g2_tech.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_stdcell_weltap.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_64x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x48_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_512x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_io_notracks.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_io.lef  /ictc/student_data/share/pd/data/user_setting/bondpad_70x70.lef  }
+<CMD> set init_mmmc_file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/croc_mmmc.view
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=09/07 14:34:12, mem=659.8M)
+#% End Load MMMC data ... (date=09/07 14:34:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=660.3M, current mem=660.3M)
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_tech.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_stdcell_weltap.lef ...
+Set DBUPerIGU to M1 pitch 480.
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_64x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x48_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_512x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_io_notracks.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_io.lef ...
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Corner' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler200' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler400' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler1000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler2000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler4000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler10000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIn' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadAnalog' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVss' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVdd' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/bondpad_70x70.lef ...
+**WARN: (IMPLF-61):	22 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Sun Sep  7 14:34:12 2025
+viaInitial ends at Sun Sep  7 14:34:12 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/croc_mmmc.view
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_stdcell_slow_1p08V_125C.lib.
+Read 78 cells in library sg13g2_stdcell_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_slow_1p35V_3p0V_125C.lib.
+Read 14 cells in library sg13g2_io_slow_1p35V_3p0V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_slow_1p08V_3p0V_125C.lib.
+Read 14 cells in library sg13g2_io_slow_1p08V_3p0V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_stdcell_fast_1p32V_m40C.lib.
+Read 78 cells in library sg13g2_stdcell_fast_1p32V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_fast_1p32V_3p6V_m40C.lib.
+Read 14 cells in library sg13g2_io_fast_1p32V_3p6V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_fast_1p65V_3p6V_m40C.lib.
+Read 14 cells in library sg13g2_io_fast_1p65V_3p6V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.03min, real=0.00min, mem=136.0M, fe_cpu=0.67min, fe_real=2.70min, fe_mem=813.9M) ***
+#% Begin Load netlist data ... (date=09/07 14:34:12, mem=686.4M)
+*** Begin netlist parsing (mem=813.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 102 new cells from 26 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_0__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_AND__Y_A_$_MUX__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_B_$_OR__Y_A' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 131 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_2__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_A' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 120 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_2__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_B' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 120 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_3__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_A_$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_OR__B_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_A_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_B_$_OR__Y_B' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 221 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (EMS-27):	Message (IMPVL-129) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Reading verilog netlist '/ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/netlist/croc_chip_yosys.v'
+
+*** Memory Usage v#1 (Current mem = 813.875M, initial mem = 273.906M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:02.0, mem=813.9M) ***
+#% End Load netlist data ... (date=09/07 14:34:14, total cpu=0:00:00.3, real=0:00:02.0, peak res=709.8M, current mem=709.8M)
+Set top cell to croc_chip.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Hooked 232 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell croc_chip ...
+*** Netlist is unique.
+** info: there are 329 modules.
+** info: there are 34132 stdCell insts.
+** info: there are 64 Pad insts.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 845.789M, initial mem = 273.906M) ***
+Initializing I/O assignment ...
+Adjusting Core to Bottom to: 0.1800.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 2.2 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.135 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0145 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_view_wc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_view_bc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc' ...
+Current (total cpu=0:00:41.3, real=0:02:44, peak res=934.0M, current mem=934.0M)
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 86).
+
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 102).
+
+INFO (CTE): Reading of timing constraints file /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=987.5M, current mem=987.5M)
+Current (total cpu=0:00:41.5, real=0:02:45, peak res=987.5M, current mem=987.5M)
+Reading timing constraints file '/ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc' ...
+Current (total cpu=0:00:41.5, real=0:02:45, peak res=987.5M, current mem=987.5M)
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 86).
+
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 102).
+
+INFO (CTE): Reading of timing constraints file /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=987.9M, current mem=987.9M)
+Current (total cpu=0:00:41.6, real=0:02:45, peak res=987.9M, current mem=987.9M)
+Total number of combinational cells: 62
+Total number of sequential cells: 10
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+Total number of usable inverters: 5
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            22  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           28  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           1  The techSite '%s' has no related standar...
+WARNING   IMPTS-282           28  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPEXT-2766          7  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          6  The via resistance between layers %s and...
+WARNING   IMPVL-129          177  The identifier '%s' in module '%s' is %d...
+WARNING   IMPVL-159          186  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1535          4  set_input_delay command specified withou...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+*** Message Summary: 497 warning(s), 0 error(s)
+
+<CMD> floorPlan -site CoreSite -d 1840.32 1840.02 168 168 168 168
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> saveDesign SAVED/00_init_design_init.invs
+#% Begin save design ... (date=09/07 14:34:15, mem=993.4M)
+% Begin Save ccopt configuration ... (date=09/07 14:34:15, mem=996.5M)
+% End Save ccopt configuration ... (date=09/07 14:34:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=998.2M, current mem=998.2M)
+% Begin Save netlist data ... (date=09/07 14:34:15, mem=998.2M)
+Writing Binary DB to SAVED/00_init_design_init.invs.dat.tmp/vbin/croc_chip.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=09/07 14:34:15, total cpu=0:00:00.1, real=0:00:00.0, peak res=1017.1M, current mem=1000.1M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file SAVED/00_init_design_init.invs.dat.tmp/croc_chip.route.congmap.gz ...
+% Begin Save AAE data ... (date=09/07 14:34:15, mem=1001.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=09/07 14:34:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1001.9M, current mem=1001.9M)
+Saving preference file SAVED/00_init_design_init.invs.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save routing data ... (date=09/07 14:34:15, mem=1004.2M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1096.2M) ***
+% End Save routing data ... (date=09/07 14:34:15, total cpu=0:00:00.1, real=0:00:00.0, peak res=1004.6M, current mem=1004.6M)
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file SAVED/00_init_design_init.invs.dat.tmp/croc_chip.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1111.2M) ***
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=09/07 14:34:16, mem=1007.1M)
+% End Save power constraints data ... (date=09/07 14:34:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=1007.3M, current mem=1007.3M)
+default_rc_corner
+Generated self-contained design 00_init_design_init.invs.dat.tmp
+#% End save design ... (date=09/07 14:34:21, total cpu=0:00:05.3, real=0:00:06.0, peak res=1034.7M, current mem=1010.8M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> check_library -all_lib_cell -place > rpt/00_init_design/check_library.rpt
+**Info: (IMPSP-307): Design contains fractional 1 cell.
+Estimated cell power/ground rail width = 0.472 um
+*info: running library checker ... with 4 cpus
+
+
+*info: total 81 cells checked.
+[check_library] saving report file "check_library.rpt" ... 
+[check_library] saving pin-access report file "check_library.rpt.pa" ... 
+[CPU] check_library (cpu=0:00:00.1, real=0:00:01.0, mem=1142.4MB) @(0:00:47.1 - 0:00:47.2).
+<CMD> deleteRow -all
+<CMD> initCoreRow
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+<CMD> cutRow
+<CMD> add_tracks -offset {Metal1 vert 0 Metal2 horiz 0 Metal3 vert 0 Metal4 horiz 0 Metal5 vert 0 TopMetal1 horiz 0 TopMetal2 vert 0}
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+<CMD> checkFPlan -reportUtil > rpt/00_init_design/check_library.rpt
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+**WARN: (IMPFP-7238):	CORE's corner: (348.0000000000 , 348.0000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+**WARN: (IMPFP-7238):	CORE's corner: (1492.3200000000 , 1492.0200000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+Checking snap rule ......
+Checking Row is on grid......
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+Checking groups.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 58.094235
+Effective Utilizations
+Extracting standard cell pins and blockage ...... 
+**WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+**WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+Type 'man IMPTR-2108' for more detail.
+ As a result, your trialRoute congestion could be incorrect.
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+**Info: (IMPSP-307): Design contains fractional 1 cell.
+Average module density = 0.582.
+Density for the design = 0.582.
+       = (stdcell_area 316449 sites (574165 um^2) + block_area 102712 sites (186361 um^2)) / alloc_area 719968 sites (1306310 um^2).
+Pin Density = 0.1813.
+            = total # of pins 130541 / total area 719968.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPFP-7238           2  CORE's corner: %s is NOT on %s,  Please ...
+WARNING   IMPTR-2104           1  Layer %s: Pitch=%d is less than min widt...
+WARNING   IMPTR-2108           1  For layer M%d, the gaps of %d out of %d ...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> placeInstance {i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut} -fixed {650.07 375.06}
+<CMD> placeInstance {i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut} -fixed {650.07 510.84}
+<CMD> win
+<CMD> zoomBox 80.76300 14.24700 1631.29600 1547.64700
+<CMD> zoomBox 220.39700 93.91500 1538.35000 1397.30500
+<CMD> zoomBox 438.62000 144.49000 1248.00900 944.93500
+<CMD> zoomBox 490.71600 156.56300 1178.69700 836.94200
+<CMD> zoomBox 540.69900 174.04800 1125.48300 752.37000
+<CMD> zoomBox 676.59900 221.40600 981.86100 523.29500
+<CMD> zoomBox 700.37900 238.69300 959.85200 495.29900
+<CMD> zoomBox 737.77300 265.87700 925.24200 451.27500
+<CMD> zoomBox 772.50500 298.89400 887.63600 412.75300
+<CMD> zoomBox 780.74200 306.90800 878.60400 403.68900
+<CMD> zoomBox 793.94500 321.91100 864.65100 391.83600
+<CMD> zoomBox 807.35900 336.58200 850.78300 379.52600
+<CMD> zoomBox 810.56200 340.08500 847.47200 376.58700
+<CMD> zoomBox 815.61700 345.59300 842.28500 371.96600
+<CMD> fit
+<CMD> zoomBox 96.61400 39.78600 1575.30900 1502.14200
+<CMD> zoomBox 240.60200 135.34900 1308.96000 1191.90200
+<CMD> zoomBox 308.18600 177.55200 1216.29000 1075.62200
+<CMD> zoomBox 213.45000 138.59500 1281.80800 1195.14800
+<CMD> zoomBox 333.86200 168.40300 1241.96600 1066.47300
+<CMD> zoomBox 523.20900 215.27600 1179.31400 864.13100
+<CMD> zoomBox 657.33000 250.14700 1131.36600 718.94500
+<CMD> zoomBox 791.66400 285.18100 1082.78200 573.08200
+<CMD> zoomBox 823.51000 293.54400 1070.96000 538.26000
+<CMD> zoomBox 893.14500 311.83100 1045.11100 462.11800
+<CMD> uiSetTool ruler
+<CMD> zoomBox 914.34600 329.38100 1024.14300 437.96500
+<CMD> zoomBox 935.64700 347.01500 1003.07600 413.69900
+<CMD> zoomBox 940.73200 351.22400 998.04700 407.90600
+<CMD> zoomBox 945.05400 354.80200 993.77200 402.98200
+<CMD> zoomBox 926.39100 351.92600 1005.72300 430.38100
+<CMD> zoomBox 908.04100 349.01100 1017.84400 457.60100
+<CMD> zoomBox 757.11900 337.87100 1378.30200 586.25300
+<CMD> zoomBox 709.42600 335.70000 1440.23000 627.91400
+<CMD> zoomBox 509.64400 326.60300 1699.64100 802.42700
+<CMD> zoomBox 418.28000 321.51900 1818.27600 881.31200
+<CMD> zoomBox 310.61100 315.53700 1957.66500 974.11700
+<CMD> zoomBox 236.82700 241.11400 2174.53800 1015.91400
+<CMD> zoomBox 559.94000 247.14900 1749.93700 722.97300
+<CMD> zoomBox 637.07600 248.59000 1648.57300 653.04000
+<CMD> zoomBox 933.78400 257.91500 1258.05100 387.57400
+<CMD> zoomBox 954.16100 261.59100 1229.78800 371.80100
+<CMD> zoomBox 998.71700 269.62800 1167.98700 337.31100
+<CMD> zoomBox 987.82500 262.90000 1186.96600 342.52700
+<CMD> zoomBox 942.19800 234.71500 1266.46700 364.37500
+<CMD> zoomBox 867.90400 188.82200 1395.92200 399.95200
+<CMD> zoomBox 794.39900 137.48900 1525.22200 429.71100
+<CMD> zoomBox 933.82100 244.62000 1315.31600 397.16200
+<CMD> zoomBox 956.66000 262.16900 1280.93100 391.83000
+<CMD> zoomBox 992.57400 289.63400 1226.86100 383.31400
+<CMD> zoomBox 1014.89700 314.86600 1184.17100 382.55100
+<CMD> zoomBox 1023.61400 324.72100 1167.49800 382.25300
+<CMD> zoomBox 1031.64200 330.45200 1153.94400 379.35500
+<CMD> zoomBox 1019.21100 327.03200 1163.09600 384.56500
+<CMD> zoomBox 1004.62400 322.98900 1173.90100 390.67500
+<CMD> zoomBox 987.70400 318.10100 1186.85400 397.73200
+<CMD> zoomBox 884.41200 288.26500 1265.92700 440.81500
+<CMD> zoomBox 686.54200 231.10700 1417.40600 523.34500
+<CMD> zoomBox 307.48100 121.61100 1707.59200 681.45000
+<CMD> zoomBox -402.32200 -96.61300 2279.85300 975.86300
+<CMD> zoomBox 367.77000 123.47700 2014.96200 782.11200
+<CMD> zoomBox 936.76000 302.94600 1796.60800 646.75900
+<CMD> zoomBox 1024.85800 340.60800 1755.72900 632.84900
+<CMD> zoomBox 1099.82200 372.62000 1721.06200 621.02500
+<CMD> zoomBox 1258.11000 435.23100 1639.63200 587.78400
+<CMD> zoomBox 1115.69100 381.87600 1846.56900 674.12000
+<CMD> zoomBox 1007.67500 337.18300 2019.27200 741.67300
+<CMD> zoomBox 858.58900 275.32400 2258.72300 835.17200
+<CMD> zoomBox 190.36400 13.33800 3345.91600 1275.09600
+<CMD> zoomBox -819.04100 -338.06300 5226.01200 2079.07100
+<CMD> zoomBox -406.29900 -113.87000 3306.12000 1370.55300
+<CMD> zoomBox -273.11100 -59.53200 2882.44700 1202.22800
+<CMD> zoomBox 19.56300 59.28400 1957.47100 834.16300
+<CMD> zoomBox 268.42900 183.61000 1458.54800 659.48300
+<CMD> zoomBox 526.17900 265.82000 1257.06500 558.06700
+<CMD> zoomBox 705.36900 288.22300 1154.22600 467.70000
+<CMD> zoomBox 746.22000 294.59500 1127.75000 447.15100
+<CMD> zoomBox 855.40500 313.18600 1054.56900 392.82200
+<CMD> zoomBox 871.79900 321.99700 1041.08900 389.68800
+<CMD> zoomBox 907.64700 341.26200 1011.61500 382.83400
+<CMD> zoomBox 843.10600 335.90500 1042.27700 415.54400
+<CMD> zoomBox 673.82300 321.98000 1122.70500 501.46700
+<CMD> zoomBox 395.17500 299.06000 1255.09300 642.90100
+<CMD> zoomBox 171.27200 280.64300 1361.47100 756.54800
+<CMD> zoomBox -335.70200 240.04100 1602.33900 1014.97300
+<CMD> zoomBox -567.30300 221.72300 1712.74500 1133.40800
+<CMD> freeDesign
+Reset to color id 0 for i_croc_soc (croc_soc$croc_chip.i_croc_soc) and all their descendants.
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 977.148M, initial mem = 273.906M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+<CMD> win
+<CMD> fit
+<CMD> zoomBox -974.00600 68.16600 2181.77000 1330.01300
+<CMD> zoomBox -1538.69500 -144.37000 2829.16100 1602.13100
+<CMD> zoomBox -2320.27300 -438.53900 3725.20500 1978.76500
+<CMD> setMultiCpuUsage -localCpu 4
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> set init_verilog /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/netlist/croc_chip_yosys.v
+<CMD> set init_design_uniquify 1
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell croc_chip
+<CMD> set init_lef_file { /ictc/student_data/share/pd/data/user_setting/sg13g2_tech.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_stdcell_weltap.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_64x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x48_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_512x64_c2_bm_bist.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_io_notracks.lef  /ictc/student_data/share/pd/data/user_setting/sg13g2_io.lef  /ictc/student_data/share/pd/data/user_setting/bondpad_70x70.lef  }
+<CMD> set init_mmmc_file /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/croc_mmmc.view
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=09/07 14:40:55, mem=816.2M)
+#% End Load MMMC data ... (date=09/07 14:40:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=816.2M, current mem=816.2M)
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_tech.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_stdcell_weltap.lef ...
+Set DBUPerIGU to M1 pitch 480.
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_64x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x48_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_256x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/RM_IHPSG13_1P_512x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_io_notracks.lef ...
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/sg13g2_io.lef ...
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Corner' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler200' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler400' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler1000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler2000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler4000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler10000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIn' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadAnalog' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVss' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVdd' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Loading LEF file /ictc/student_data/share/pd/data/user_setting/bondpad_70x70.lef ...
+**WARN: (IMPLF-61):	22 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Sun Sep  7 14:40:55 2025
+viaInitial ends at Sun Sep  7 14:40:55 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/croc_mmmc.view
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_stdcell_slow_1p08V_125C.lib.
+Read 78 cells in library sg13g2_stdcell_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_slow_1p35V_3p0V_125C.lib.
+Read 14 cells in library sg13g2_io_slow_1p35V_3p0V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_slow_1p08V_3p0V_125C.lib.
+Read 14 cells in library sg13g2_io_slow_1p08V_3p0V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib.
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1 cells in library RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.
+Reading sky130_wc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib.
+Read 1 cells in library RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_stdcell_fast_1p32V_m40C.lib.
+Read 78 cells in library sg13g2_stdcell_fast_1p32V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_fast_1p32V_3p6V_m40C.lib.
+Read 14 cells in library sg13g2_io_fast_1p32V_3p6V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/sg13g2_io_fast_1p65V_3p6V_m40C.lib.
+Read 14 cells in library sg13g2_io_fast_1p65V_3p6V_m40C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.
+Reading sky130_bc timing library /ictc/student_data/share/pd/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib.
+Read 1 cells in library RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.03min, real=0.02min, mem=40.0M, fe_cpu=1.52min, fe_real=9.43min, fe_mem=1014.9M) ***
+#% Begin Load netlist data ... (date=09/07 14:40:56, mem=819.0M)
+*** Begin netlist parsing (mem=1014.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 102 new cells from 26 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync' in module '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ' is 141 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync' in module '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ' is 142 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 144 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src' in module '\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ' is 145 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_0__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_AND__Y_A_$_MUX__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_B_$_OR__Y_A' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 131 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_2__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_A' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 120 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_2__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_B_$_OR__Y_B_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_B' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 120 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (IMPVL-129):	The identifier '\i_ibex.alu_operator_ex_3__$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_OR__Y_B_$_AND__Y_A_$_MUX__Y_A_$_MUX__Y_B_$_OR__Y_A_$_OR__Y_A_$_OR__B_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_A_$_NOT__Y_A_$_OR__Y_A_$_OR__Y_A_$_OR__Y_B_$_OR__Y_B' in module '\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap ' is 221 characters long and contains many unexpected characters. Hierarchical names with such an identifier as a component may be problematic.
+**WARN: (EMS-27):	Message (IMPVL-129) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Reading verilog netlist '/ictc/student_data/vantruong/final_pj/fn_prj_here/input_data/netlist/croc_chip_yosys.v'
+
+*** Memory Usage v#1 (Current mem = 1014.926M, initial mem = 273.906M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=1014.9M) ***
+#% End Load netlist data ... (date=09/07 14:40:56, total cpu=0:00:00.3, real=0:00:00.0, peak res=835.1M, current mem=835.1M)
+Set top cell to croc_chip.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Hooked 232 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell croc_chip ...
+*** Netlist is unique.
+** info: there are 329 modules.
+** info: there are 34132 stdCell insts.
+** info: there are 64 Pad insts.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 1025.426M, initial mem = 273.906M) ***
+*info: set bottom ioPad orient R0
+Initializing I/O assignment ...
+Adjusting Core to Bottom to: 168.1800.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 2.2 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.135 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0145 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_view_wc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_view_bc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc' ...
+Current (total cpu=0:01:33, real=0:09:27, peak res=1067.8M, current mem=1042.7M)
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 86).
+
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 102).
+
+INFO (CTE): Reading of timing constraints file /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1068.6M, current mem=1068.6M)
+Current (total cpu=0:01:33, real=0:09:27, peak res=1068.6M, current mem=1068.6M)
+Reading timing constraints file '/ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc' ...
+Current (total cpu=0:01:33, real=0:09:27, peak res=1068.6M, current mem=1068.6M)
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 86).
+
+**WARN: (TCLCMD-1535):	set_input_delay command specified without '-clock' option. (File /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc, Line 102).
+
+INFO (CTE): Reading of timing constraints file /ictc/student_data/share/pd/data/user_setting/backup/constraints.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1068.8M, current mem=1068.8M)
+Current (total cpu=0:01:33, real=0:09:27, peak res=1068.8M, current mem=1068.8M)
+Total number of combinational cells: 62
+Total number of sequential cells: 10
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+Total number of usable inverters: 5
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            22  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           28  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           1  The techSite '%s' has no related standar...
+WARNING   IMPTS-282           28  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPEXT-2766          7  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          6  The via resistance between layers %s and...
+WARNING   IMPVL-129          177  The identifier '%s' in module '%s' is %d...
+WARNING   IMPVL-159          186  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1535          4  set_input_delay command specified withou...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+*** Message Summary: 497 warning(s), 0 error(s)
+
+<CMD> floorPlan -site CoreSite -d 1840.32 1840.02 168 168 168 168
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> saveDesign SAVED/00_init_design_init.invs
+#% Begin save design ... (date=09/07 14:40:57, mem=1069.7M)
+% Begin Save ccopt configuration ... (date=09/07 14:40:57, mem=1069.7M)
+% End Save ccopt configuration ... (date=09/07 14:40:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1069.9M, current mem=1069.9M)
+% Begin Save netlist data ... (date=09/07 14:40:58, mem=1069.9M)
+Writing Binary DB to SAVED/00_init_design_init.invs.dat.tmp/vbin/croc_chip.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=09/07 14:40:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=1085.2M, current mem=1071.0M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file SAVED/00_init_design_init.invs.dat.tmp/croc_chip.route.congmap.gz ...
+% Begin Save AAE data ... (date=09/07 14:40:58, mem=1071.9M)
+Saving AAE Data ...
+% End Save AAE data ... (date=09/07 14:40:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1071.9M, current mem=1071.9M)
+Saving preference file SAVED/00_init_design_init.invs.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save routing data ... (date=09/07 14:40:58, mem=1072.5M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1228.6M) ***
+% End Save routing data ... (date=09/07 14:40:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=1073.0M, current mem=1073.0M)
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file SAVED/00_init_design_init.invs.dat.tmp/croc_chip.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1242.6M) ***
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=09/07 14:40:58, mem=1073.5M)
+% End Save power constraints data ... (date=09/07 14:40:58, total cpu=0:00:00.0, real=0:00:01.0, peak res=1073.5M, current mem=1073.5M)
+default_rc_corner
+Generated self-contained design 00_init_design_init.invs.dat.tmp
+#% End save design ... (date=09/07 14:41:04, total cpu=0:00:05.3, real=0:00:07.0, peak res=1103.0M, current mem=1073.8M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> check_library -all_lib_cell -place > rpt/00_init_design/check_library.rpt
+**Info: (IMPSP-307): Design contains fractional 1 cell.
+*info: running library checker ... with 4 cpus
+
+
+*info: total 81 cells checked.
+[check_library] saving report file "check_library.rpt" ... 
+[check_library] saving pin-access report file "check_library.rpt.pa" ... 
+[CPU] check_library (cpu=0:00:00.1, real=0:00:00.0, mem=1235.7MB) @(0:01:39 - 0:01:39).
+<CMD> deleteRow -all
+<CMD> initCoreRow
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+<CMD> cutRow
+<CMD> add_tracks -offset {Metal1 vert 0 Metal2 horiz 0 Metal3 vert 0 Metal4 horiz 0 Metal5 vert 0 TopMetal1 horiz 0 TopMetal2 vert 0}
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+<CMD> checkFPlan -reportUtil > rpt/00_init_design/check_library.rpt
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+Checking core/die box is on Grid.....
+**WARN: (IMPFP-7238):	CORE's corner: (348.0000000000 , 348.0000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+**WARN: (IMPFP-7238):	CORE's corner: (1492.3200000000 , 1492.0200000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+Checking snap rule ......
+Checking Row is on grid......
+Checking AreaIO row.....
+Checking row out of die ...
+Checking routing blockage.....
+Checking components.....
+Checking IO Pads out of die...
+Checking constraints (guide/region/fence).....
+Checking groups.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+
+Reporting Utilizations.....
+
+Core utilization  = 58.094235
+Effective Utilizations
+Extracting standard cell pins and blockage ...... 
+**WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+**WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+Type 'man IMPTR-2108' for more detail.
+ As a result, your trialRoute congestion could be incorrect.
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+**Info: (IMPSP-307): Design contains fractional 1 cell.
+Average module density = 0.582.
+Density for the design = 0.582.
+       = (stdcell_area 316449 sites (574165 um^2) + block_area 102712 sites (186361 um^2)) / alloc_area 719968 sites (1306310 um^2).
+Pin Density = 0.1813.
+            = total # of pins 130541 / total area 719968.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPFP-7238           2  CORE's corner: %s is NOT on %s,  Please ...
+WARNING   IMPTR-2104           1  Layer %s: Pitch=%d is less than min widt...
+WARNING   IMPTR-2108           1  For layer M%d, the gaps of %d out of %d ...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> placeInstance {i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut} -fixed {655.07 375.06}
+<CMD> placeInstance {i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut} -fixed {655.07 508.84}
+<CMD> win
+<CMD> zoomBox -711.01300 31.88600 2746.34500 1414.32200
+<CMD> zoomBox -394.82900 78.30500 2543.92700 1253.37600
+<CMD> zoomBox 40.74300 138.13600 2163.99700 987.12600
+<CMD> zoomBox 210.85300 161.50200 2015.61900 883.14400
+<CMD> zoomBox 423.23300 198.24500 1727.17900 719.63200
+<CMD> zoomBox 634.85100 234.48100 1435.63700 554.67800
+<CMD> zoomBox 677.15200 248.84600 1357.82000 521.01300
+<CMD> zoomBox 771.23800 284.42700 1189.25400 451.57200
+<CMD> zoomBox 804.63600 296.43400 1159.95000 438.50700
+<CMD> zoomBox 669.01100 257.44800 1247.58200 488.79200
+<CMD> zoomBox 606.98500 239.62000 1287.65800 511.78900
+<CMD> zoomBox 226.52000 132.98300 1530.47800 654.37500
+<CMD> zoomBox -81.35000 47.36800 1723.43800 769.01800
+<CMD> zoomBox -278.10000 -7.07700 1845.18000 841.92300
+<CMD> zoomBox 5.10800 69.33300 1809.89600 790.98300
+<CMD> zoomBox 599.33800 238.45500 1707.70700 681.64000
+<CMD> zoomBox 741.19800 278.83000 1683.31100 655.53700
+<CMD> zoomBox 1124.12100 387.19800 1615.91200 583.84200
+<CMD> zoomBox 1237.66400 419.13800 1592.98300 561.21300
+<CMD> zoomBox 1281.96800 431.57300 1583.98900 552.33700
+<CMD> zoomBox 1375.42300 451.32300 1560.90400 525.48800
+<CMD> zoomBox 1349.79900 447.24000 1568.01200 534.49300
+<CMD> zoomBox 1135.62600 413.11500 1627.42800 609.76400
+<CMD> zoomBox 783.08600 357.13800 1725.22700 733.85600
+<CMD> zoomBox 97.60500 252.06800 1902.45200 973.74200
+
+*** Memory Usage v#1 (Current mem = 1237.395M, initial mem = 273.906M) ***
+*** Message Summary: 1011 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:46, real=0:10:35, mem=1237.4M) ---

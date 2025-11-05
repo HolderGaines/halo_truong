@@ -1,0 +1,1659 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	-log ./log/PD1_20250919_190726.log 
+Date:		Fri Sep 19 19:07:27 2025
+Host:		ictc-eda-be-9-ldap-1 (x86_64 w/Linux 5.14.0-570.33.2.el9_6.x86_64) (18cores*36cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		Rocky Linux release 9.6 (Blue Onyx)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (394 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat croc_chip
+#% Begin load design ... (date=09/19 19:09:02, mem=661.7M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'croc_chip' saved by 'Innovus' '20.10-p004_1' on 'Mon Sep 15 22:05:02 2025'.
+% Begin Load MMMC data ... (date=09/19 19:09:03, mem=663.7M)
+% End Load MMMC data ... (date=09/19 19:09:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=664.2M, current mem=664.2M)
+default_rc_corner
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/sg13g2_tech.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/sg13g2_stdcell_weltap.lef ...
+Set DBUPerIGU to M1 pitch 480.
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/sg13g2_io_notracks.lef ...
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/sg13g2_io.lef ...
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Corner' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler200' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler400' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler1000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler2000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler4000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_Filler10000' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIn' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadTriOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut4mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut16mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadInOut30mA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadAnalog' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVss' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'sg13g2_IOPadIOVdd' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Loading LEF file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/libs/lef/bondpad_70x70.lef ...
+**WARN: (IMPLF-61):	22 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'padres' in macro 'sg13g2_IOPadAnalog' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadInOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut30mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut16mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'c2p_en' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'pad' in macro 'sg13g2_IOPadTriOut4mA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut30mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut16mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadOut4mA' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'p2c' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'pad' in macro 'sg13g2_IOPadIn' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Fri Sep 19 19:09:03 2025
+viaInitial ends at Fri Sep 19 19:09:03 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/viewDefinition.tcl
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_stdcell_slow_1p08V_125C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_slow_1p35V_3p0V_125C.lib' ...
+Read 14 cells in library 'sg13g2_io_slow_1p35V_3p0V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_slow_1p08V_3p0V_125C.lib' ...
+Read 14 cells in library 'sg13g2_io_slow_1p08V_3p0V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x64_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_2048x64_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_4096x8_c3_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x16_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_256x48_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_512x64_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_256x64_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_4096x16_c3_bm_bist_slow_1p08V_125C' 
+Reading sky130_wc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_64x64_c2_bm_bist_slow_1p08V_125C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_fast_1p32V_3p6V_m40C.lib' ...
+Read 14 cells in library 'sg13g2_io_fast_1p32V_3p6V_m40C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/sg13g2_io_fast_1p65V_3p6V_m40C.lib' ...
+Read 14 cells in library 'sg13g2_io_fast_1p65V_3p6V_m40C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_2048x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x16_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_4096x16_c3_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_64x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_256x48_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_4096x8_c3_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_4096x8_c3_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x16_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_1024x16_c2_bm_bist_fast_1p32V_m55C' 
+Reading sky130_bc timing library '/ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_512x64_c2_bm_bist'. The cell will only be used for analysis. (File /ictc/student_data/vantruong/final_pj/fn_prj_here/data/user_setting/backup/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib)
+Read 1 cells in library 'RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C' 
+*** End library_loading (cpu=0.03min, real=0.02min, mem=45.5M, fe_cpu=0.61min, fe_real=1.62min, fe_mem=721.5M) ***
+% Begin Load netlist data ... (date=09/19 19:09:04, mem=688.0M)
+*** Begin netlist parsing (mem=721.5M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_xnor2_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tielo' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_tiehi' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_slgcp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sighold' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_sdfbbp_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or4_1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'sg13g2_or3_2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 102 new cells from 26 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/vbin/croc_chip.v.bin'
+Reading binary database version 2 in 1-threaded mode
+
+*** Memory Usage v#1 (Current mem = 742.547M, initial mem = 273.906M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:01.0, mem=742.5M) ***
+% End Load netlist data ... (date=09/19 19:09:05, total cpu=0:00:00.2, real=0:00:01.0, peak res=709.0M, current mem=709.0M)
+Set top cell to croc_chip.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadIn' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadTriOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut4mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut30mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'sg13g2_IOPadOut16mA' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Hooked 232 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell croc_chip ...
+*** Netlist is unique.
+** info: there are 329 modules.
+** info: there are 44368 stdCell insts.
+** info: there are 64 Pad insts.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 797.461M, initial mem = 273.906M) ***
+*info: set bottom ioPad orient R0
+Initializing I/O assignment ...
+Adjusting Core to Bottom to: 168.1800.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/gui.pref.tcl ...
+##  Process: 130           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for reg2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2mem is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2mem path_group
+**WARN: (IMPOPT-3602):	The specified path group name mem2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for mem2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2out path_group
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+**WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 62
+Total number of sequential cells: 10
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+Total number of usable inverters: 5
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+% Begin Load MMMC data ... (date=09/19 19:09:06, mem=940.5M)
+% End Load MMMC data ... (date=09/19 19:09:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=940.5M, current mem=940.5M)
+Reading floorplan file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.fp.gz (mem = 980.6M).
+% Begin Load floorplan data ... (date=09/19 19:09:06, mem=941.1M)
+*info: reset 51214 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 1840320 1840020)
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.fp.spr.gz (Created by Innovus v20.10-p004_1 on Mon Sep 15 22:04:54 2025, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=946.1M, current mem=946.1M)
+There are 64 io inst loaded
+There are 244 nets with weight being set
+There are 245 nets with bottomPreferredRoutingLayer being set
+There are 244 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+**WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+**WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+Type 'man IMPTR-2108' for more detail.
+ As a result, your trialRoute congestion could be incorrect.
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=09/19 19:09:06, total cpu=0:00:00.2, real=0:00:00.0, peak res=948.1M, current mem=948.1M)
+Reading congestion map file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=09/19 19:09:06, mem=948.1M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=09/19 19:09:07, total cpu=0:00:00.2, real=0:00:01.0, peak res=961.5M, current mem=961.5M)
+Loading place ...
+% Begin Load placement data ... (date=09/19 19:09:07, mem=961.5M)
+Reading placement file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v20.10-p004_1 on Mon Sep 15 22:04:54 2025, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Checked 6 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.3 real=0:00:00.0 mem=1019.7M) ***
+Total net length = 1.815e+06 (9.067e+05 9.085e+05) (ext = 0.000e+00)
+% End Load placement data ... (date=09/19 19:09:07, total cpu=0:00:00.4, real=0:00:00.0, peak res=984.4M, current mem=981.1M)
+Reading PG file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.pg.gz, version#2, (Created by Innovus v20.10-p004_1 on       Mon Sep 15 22:04:54 2025)
+*** Completed restorePGFile (cpu=0:00:00.1 real=0:00:00.0 mem=1016.7M) ***
+% Begin Load routing data ... (date=09/19 19:09:07, mem=983.1M)
+Reading routing file - /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.route.gz.
+Reading Innovus routing data (Created by Innovus v20.10-p004_1 on Mon Sep 15 22:04:54 2025 Format: 20.1) ...
+*** Total 49857 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.6 real=0:00:01.0 mem=1078.7M) ***
+% End Load routing data ... (date=09/19 19:09:08, total cpu=0:00:00.6, real=0:00:01.0, peak res=1045.6M, current mem=1045.6M)
+Loading Drc markers ...
+... 5304 markers are loaded ...
+... 4066 geometry drc markers are loaded ...
+... 16 antenna drc markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1087.7M) ***
+Reading dirtyarea snapshot file /ictc/student_data/vantruong/final_pj/fn_prj_here/flowspd/pd1/06done15.dat/croc_chip.db.da.gz (Create by Innovus v20.10-p004_1 on Mon Sep 15 22:04:55 2025, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 20 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 2.2 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.135 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.103 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0145 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_view_wc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_view_bc
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Initializing multi-corner resistance tables ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+**WARN: (IMPTR-2104):	Layer M6: Pitch=2280 is less than min width=1640 + min spacing=1640.
+**WARN: (IMPTR-2108):	For layer M6, the gaps of 729 out of 729 tracks are narrower than 3.280um (space 1.640 + width 1.640).
+Type 'man IMPTR-2108' for more detail.
+ As a result, your trialRoute congestion could be incorrect.
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=09/19 19:09:10, mem=1070.4M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=09/19 19:09:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1077.1M, current mem=1077.1M)
+delay_tc delay_bc delay_wc
+% Begin load AAE data ... (date=09/19 19:09:10, mem=1143.4M)
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+AAE DB initialization (MEM=1208.09 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=09/19 19:09:11, total cpu=0:00:00.4, real=0:00:01.0, peak res=1158.0M, current mem=1158.0M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk_sys...
+    clock_tree clk_sys contains 4983 sinks and 0 clock gates.
+    Extraction for clk_sys complete.
+  Extracting original clock gating for clk_sys done.
+  Extracting original clock gating for clk_rtc...
+    clock_tree clk_rtc contains 1 sinks and 0 clock gates.
+    Extraction for clk_rtc complete.
+  Extracting original clock gating for clk_rtc done.
+  Extracting original clock gating for clk_jtg...
+    clock_tree clk_jtg contains 290 sinks and 0 clock gates.
+    Extraction for clk_jtg complete.
+  Extracting original clock gating for clk_jtg done.
+  The skew group clk_jtg/func_mode_ideal_bc was created. It contains 290 sinks and 1 sources.
+  The skew group clk_jtg/func_mode_ideal_wc was created. It contains 290 sinks and 1 sources.
+  The skew group clk_rtc/func_mode_ideal_bc was created. It contains 1 sinks and 1 sources.
+  The skew group clk_rtc/func_mode_ideal_wc was created. It contains 1 sinks and 1 sources.
+  The skew group clk_sys/func_mode_ideal_bc was created. It contains 4983 sinks and 1 sources.
+  The skew group clk_sys/func_mode_ideal_wc was created. It contains 4983 sinks and 1 sources.
+  Added 1 ignore pin (of 1 specified) to skew group 1. Skew group now contains 1 ignore pin.
+  Added 1 ignore pin (of 1 specified) to skew group 4. Skew group now contains 1 ignore pin.
+  Added 1 ignore pin (of 1 specified) to skew group 7. Skew group now contains 1 ignore pin.
+  The skew group clk_jtg/func_mode_ideal_bc was created. It contains 290 sinks and 1 sources.
+  The skew group clk_rtc/func_mode_ideal_bc was created. It contains 1 sinks and 1 sources.
+  The skew group clk_sys/func_mode_ideal_bc was created. It contains 4983 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 62
+Total number of sequential cells: 10
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: sg13g2_buf_1 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+Total number of usable buffers: 4
+List of unusable buffers: sg13g2_buf_16
+Total number of unusable buffers: 1
+List of usable inverters: sg13g2_inv_1 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8
+Total number of usable inverters: 4
+List of unusable inverters: sg13g2_inv_16
+Total number of unusable inverters: 1
+List of identified usable delay cells: sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=09/19 19:09:11, total cpu=0:00:08.1, real=0:00:09.0, peak res=1178.5M, current mem=1168.3M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            22  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           28  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-282           28  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPEXT-2766          7  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          6  The via resistance between layers %s and...
+WARNING   IMPCK-8086           2  The command %s is obsolete and will be r...
+WARNING   IMPVL-159          186  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+WARNING   IMPOPT-3602          6  The specified path group name %s is not ...
+WARNING   IMPTR-2104           2  Layer %s: Pitch=%d is less than min widt...
+WARNING   IMPTR-2108           2  For layer M%d, the gaps of %d out of %d ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+*** Message Summary: 332 warning(s), 0 error(s)
+
+<CMD> set_table_style -nosplit -no_frame_fix_width
+<CMD> report_timing -path_group reg2reg -max_paths $num_path > report_timing_path.rpt
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: croc_chip
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'croc_chip' of instances=108569 and nets=51214 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design croc_chip.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.4
+      Min Width        : 0.16
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.45
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.45
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.45
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.45
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 2
+      Min Width        : 1.64
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 3
+      Min Width        : 2
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_59306_ictc-eda-be-9-ldap-1_vantruong_IbRefN/croc_chip_59306_8fbV2C.rcdb.d  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1243.3M)
+Extracted 10.0002% (CPU Time= 0:00:01.9  MEM= 1358.4M)
+Extracted 20.0002% (CPU Time= 0:00:02.3  MEM= 1364.4M)
+Extracted 30.0002% (CPU Time= 0:00:03.6  MEM= 1378.4M)
+Extracted 40.0003% (CPU Time= 0:00:03.9  MEM= 1383.4M)
+Extracted 50.0003% (CPU Time= 0:00:04.5  MEM= 1388.4M)
+Extracted 60.0003% (CPU Time= 0:00:06.0  MEM= 1391.4M)
+Extracted 70.0003% (CPU Time= 0:00:06.3  MEM= 1392.4M)
+Extracted 80.0003% (CPU Time= 0:00:06.8  MEM= 1393.4M)
+Extracted 90.0003% (CPU Time= 0:00:07.5  MEM= 1397.4M)
+Extracted 100% (CPU Time= 0:00:09.0  MEM= 1400.4M)
+Number of Extracted Resistors     : 869573
+Number of Extracted Ground Cap.   : 888630
+Number of Extracted Coupling Cap. : 1832884
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.4fF, relative_c_threshold=1, and total_c_threshold=0fF.
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1384.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.5  Real Time: 0:00:10.0  MEM: 1384.422M)
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1384.42)
+Initializing multi-corner resistance tables ...
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+**WARN: (EMS-27):	Message (IMPESI-3194) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPESI-3199) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPESI-3095) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  97.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1434.41 CPU=0:00:17.0 REAL=0:00:17.0)
+End delay calculation (fullDC). (MEM=1434.41 CPU=0:00:18.9 REAL=0:00:19.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1426.4M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.3, REAL = 0:00:00.0, MEM = 1426.4M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1425.53)
+Glitch Analysis: View func_view_wc -- Total Number of Nets Skipped = 4. 
+Glitch Analysis: View func_view_wc -- Total Number of Nets Analyzed = 49887. 
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  4.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1463.69 CPU=0:00:02.6 REAL=0:00:03.0)
+End delay calculation (fullDC). (MEM=1463.69 CPU=0:00:02.9 REAL=0:00:03.0)
+wrong # args: should be "llength list"
+<CMD> set_table_style -nosplit -no_frame_fix_width
+can't read "line": no such variable
+<CMD> set_table_style -nosplit -no_frame_fix_width
+can't read "line": no such variable
+<CMD> set_table_style -nosplit -no_frame_fix_width
+<CMD> win
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> zoomBox 369.52500 195.97200 1626.41600 1438.97500
+<CMD> zoomBox 664.93800 430.53300 1321.04400 1079.38900
+<CMD> zoomBox 712.96800 469.13800 1270.65800 1020.66600
+<CMD> fit
+<CMD> zoomBox -126.42800 512.64000 2011.31800 1410.71000
+<CMD> zoomBox 562.04400 796.34400 1368.29800 1135.05200
+<CMD> zoomBox 677.87400 843.58200 1260.39300 1088.29900
+<CMD> zoomBox 767.28800 863.91900 1188.16000 1040.72800
+<CMD> zoomBox 854.61400 887.27500 1113.08300 995.85800
+<CMD> zoomBox 873.92900 894.39500 1093.62800 986.69100
+<CMD> zoomBox 905.44800 905.68000 1064.18100 972.36400
+<CMD> zoomBox 917.75700 910.08700 1052.68200 966.76900
+<CMD> zoomBox 944.67400 919.72400 1027.53500 954.53400
+<CMD> selectInst i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3329_0
+<CMD> win
+<CMD> setLayerPreference node_net -isVisible 0
+<CMD> setLayerPreference node_net -isVisible 1
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference power -isVisible 1
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> zoomBox 933.48800 918.27500 1030.97100 959.22800
+<CMD> zoomBox 904.95400 914.56500 1039.88000 971.24800
+<CMD> zoomBox 812.99200 901.87900 1071.47100 1010.46600
+<CMD> zoomBox 741.89200 891.90100 1099.64900 1042.19500
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> zoomBox 781.74200 900.20500 1085.83500 1027.95500
+<CMD> zoomBox 821.88000 908.68100 1080.36100 1017.26900
+<CMD> zoomBox 856.05400 915.88600 1075.76300 1008.18600
+<CMD> zoomBox 913.27600 928.31800 1072.01600 995.00500
+<CMD> zoomBox 935.62400 933.17300 1070.55300 989.85700
+<CMD> setLayerPreference node_floorplan -isVisible 1
+<CMD> setLayerPreference node_floorplan -isVisible 0
+<CMD> setLayerPreference node_row -isVisible 1
+<CMD> setLayerPreference node_row -isVisible 0
+<CMD> setLayerPreference node_row -isVisible 1
+<CMD> setLayerPreference node_blockage -isVisible 1
+<CMD> setLayerPreference node_blockage -isVisible 0
+<CMD> setLayerPreference node_blockage -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> setLayerPreference node_inst -isVisible 0
+<CMD> setLayerPreference node_row -isVisible 0
+<CMD> setLayerPreference stdRow -isVisible 1
+<CMD> setLayerPreference stdRow -isVisible 0
+<CMD> setLayerPreference stdRow -isVisible 1
+<CMD> setLayerPreference ioRow -isVisible 1
+<CMD> setLayerPreference ioRow -isVisible 0
+<CMD> setLayerPreference ioRow -isVisible 1
+<CMD> setLayerPreference sitePattern -isVisible 1
+<CMD> setLayerPreference sitePattern -isVisible 0
+<CMD> setLayerPreference macroSitePattern -isVisible 1
+<CMD> setLayerPreference Metal1 -isVisible 0
+<CMD> zoomBox 950.65000 938.72300 1048.13600 979.67700
+<CMD> zoomBox 961.50500 942.73200 1031.94000 972.32200
+<CMD> zoomBox 969.34800 945.62900 1020.23800 967.00800
+<CMD> zoomBox 964.58800 944.51200 1024.45900 969.66400
+<CMD> zoomBox 958.97900 943.19800 1029.41700 972.78900
+<CMD> zoomBox 951.42900 942.12800 1034.29700 976.94100
+<CMD> setLayerPreference Metal3 -isVisible 0
+<CMD> setLayerPreference Via2 -isVisible 0
+<CMD> setLayerPreference Metal2 -isVisible 0
+<CMD> setLayerPreference Via1 -isVisible 0
+<CMD> setLayerPreference Cont -isVisible 0
+<CMD> setLayerPreference poly -isVisible 0
+<CMD> zoomBox 964.23300 946.15200 1024.10500 971.30400
+<CMD> zoomBox 957.91500 944.40200 1028.35300 973.99300
+<CMD> zoomBox 941.71800 939.96100 1039.21000 980.91800
+<CMD> zoomBox 918.67500 927.61400 1053.61500 984.30200
+<CMD> zoomBox 873.42900 896.43200 1093.15900 988.74100
+<CMD> zoomBox 910.28600 919.53400 1069.04200 986.22800
+<CMD> zoomBox 924.40400 928.67700 1059.34800 985.36700
+<CMD> zoomBox 936.24400 936.21400 1050.94700 984.40100
+<CMD> zoomBox 954.86300 948.06700 1037.73600 982.88200
+<CMD> zoomBox 968.31500 956.63100 1028.19100 981.78500
+<CMD> zoomBox 961.59900 956.60800 1032.04200 986.20100
+<CMD> zoomBox 953.69800 956.58100 1036.57200 991.39600
+<CMD> zoomBox 944.42400 956.47500 1041.92300 997.43400
+<CMD> zoomBox 933.33900 956.05100 1048.04400 1004.23900
+<CMD> zoomBox 920.29700 955.55300 1055.24500 1012.24500
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> undo
+**ERROR: (IMPSYT-6852):	No more action to undo.
+<CMD> zoomBox 894.88600 947.94500 1081.66700 1026.41200
+<CMD> zoomBox 878.72700 943.10700 1098.46900 1035.42100
+<CMD> zoomBox 912.58900 954.17400 1071.35300 1020.87100
+<CMD> zoomBox 925.81300 958.49600 1060.76400 1015.18900
+<CMD> zoomBox 936.55600 962.33100 1051.26500 1010.52000
+<CMD> zoomBox 945.66300 965.59000 1043.16600 1006.55100
+<CMD> zoomBox 936.15800 961.03700 1050.86700 1009.22600
+<CMD> zoomBox 926.24900 953.35200 1061.20100 1010.04600
+<CMD> zoomBox 900.91100 933.67500 1087.69900 1012.14500
+<CMD> zoomBox 885.77500 921.61500 1105.52700 1013.93300
+<CMD> zoomBox 914.96500 946.92400 1073.73600 1013.62400
+<CMD> zoomBox 926.67400 956.67100 1061.63000 1013.36600
+<CMD> zoomBox 936.67100 964.94100 1051.38400 1013.13200
+<CMD> zoomBox 927.11300 961.66200 1062.06900 1018.35700
+<CMD> report_timing -path_group reg2reg
+Path 1: MET Setup Check with Pin i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/CLK 
+Endpoint:   i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/D                  (^) checked with  leading edge of 'clk_sys'
+Beginpoint: i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/Q (v) triggered by  leading edge of 'clk_sys'
+Path Groups: {reg2reg}
+Analysis View: func_view_wc
+Other End Arrival Time          2.622
+- Setup                         0.124
++ Phase Shift                  10.000
++ CPPR Adjustment               0.017
+- Uncertainty                   0.100
+= Required Time                12.414
+- Arrival Time                 12.386
+= Slack Time                    0.028
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Prop)  1.870
+     = Beginpoint Arrival Time       1.870
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                                             Cell             Fanout  Load   Slew   Delay  Arrival  Pin  
+                                                                                                                                                                                    Time     Location  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/CLK                                                -                32      0.163  0.150  -      1.870    (1257.12, 992.70)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/Q                                                  sg13g2_dfrbp_1   1       0.011  0.072  0.400  2.270    (1266.72, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_OCPC13614_i_ibex_id_stage_i_controller_i_instr_i_20/Y                         sg13g2_inv_4     2       0.034  0.070  0.085  2.355    (1268.16, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_postCTS_holdFE_OCPC13828_i_ibex_id_stage_i_controller_i_instr_i_20/Y  sg13g2_inv_4     1       0.008  0.028  0.048  2.402    (1279.68, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5005_/Y                                                                   sg13g2_nor2b_2   10      0.136  0.888  0.806  3.209    (1296.96, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5860_/Y                                                                   sg13g2_a22oi_1   1       0.006  0.235  0.398  3.607    (1380.00, 815.46)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_13165_0/Y                                                sg13g2_o21ai_1   1       0.006  0.183  0.231  3.838    (1383.36, 804.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5865_/Y                                                                   sg13g2_nand2_1   1       0.006  0.097  0.133  3.971    (1373.28, 811.68)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_154_0/Y                                                  sg13g2_inv_2     1       0.007  0.047  0.067  4.038    (1375.20, 812.10)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_11374_0/Y                                                sg13g2_nor2_2    1       0.008  0.048  0.056  4.094    (1385.28, 806.22)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_OCPC12675_i_ibex_ex_block_i_multdiv_operand_b_i_23/X                          sg13g2_buf_8     3       0.092  0.086  0.144  4.238    (1380.96, 806.22)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_544_0/Y                                                                         sg13g2_a21oi_2   1       0.010  0.130  0.167  4.405    (1131.84, 962.88)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OCPC9767_1336/X                                                                    sg13g2_buf_8     3       0.035  0.052  0.164  4.570    (1127.52, 970.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_15252_0/Y                                                                       sg13g2_nand3_1   1       0.004  0.097  0.116  4.686    (957.12, 969.18)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OCPC9579_1337/X                                                                    sg13g2_buf_4     3       0.013  0.041  0.149  4.835    (952.80, 970.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_4687_0/Y                                                                   sg13g2_o21ai_1   2       0.009  0.192  0.186  5.020    (941.28, 964.98)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3282_0/Y                                                                        sg13g2_nand2_2   2       0.011  0.102  0.141  5.161    (945.60, 959.10)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3281_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.054  0.071  5.232    (960.48, 954.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3280_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.055  0.073  5.306    (965.28, 954.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_245_0/Y                                                                         sg13g2_nand2_2   2       0.009  0.055  0.062  5.368    (966.72, 959.10)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_setupFE_RC_2417_0/Y                                                                  sg13g2_a21oi_2   3       0.019  0.122  0.141  5.509    (964.80, 950.28)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_4688_0/Y                                                                   sg13g2_a21oi_2   3       0.017  0.146  0.185  5.695    (944.16, 940.20)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_464_0_dup/Y                                                                     sg13g2_a21oi_2   2       0.014  0.112  0.159  5.854    (947.52, 932.64)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_8717_0/Y                                                                        sg13g2_inv_2     1       0.006  0.047  0.069  5.922    (944.64, 925.50)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_8716_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.088  0.070  5.992    (937.44, 928.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_13084_0/Y                                                                       sg13g2_nand2_2   1       0.007  0.055  0.068  6.059    (935.52, 931.38)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_13155_0/Y                                                                       sg13g2_a21oi_2   1       0.006  0.063  0.088  6.147    (928.32, 932.64)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_5012_0/Y                                                                        sg13g2_nor2_2    1       0.006  0.071  0.086  6.233    (924.96, 933.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_3558_0/Y                                                                   sg13g2_a21oi_2   1       0.009  0.076  0.065  6.297    (927.84, 935.16)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OFC2107_core_data_obi_req_70/X                                                     sg13g2_buf_8     3       0.035  0.047  0.143  6.441    (934.08, 934.74)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_1387_0/X                                                                              sg13g2_buf_2     3       0.018  0.065  0.148  6.588    (945.12, 927.18)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_1386_0/Y                                                                              sg13g2_nor2_2    3       0.015  0.124  0.145  6.733    (950.88, 933.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_OFC5628_0091/Y                                                                           sg13g2_inv_1     2       0.006  0.060  0.093  6.826    (963.56, 916.89)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_14962_0/Y                                                                                   sg13g2_nand2_1   1       0.005  0.065  0.084  6.910    (964.80, 917.52)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13411_0/Y                                                                                   sg13g2_nand2_1   1       0.004  0.069  0.091  7.001    (962.40, 904.92)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13595_0/Y                                                                                   sg13g2_inv_1     1       0.007  0.062  0.076  7.076    (961.24, 901.77)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13701_0/Y                                                                                   sg13g2_nand2_2   1       0.006  0.060  0.089  7.165    (955.68, 908.70)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_9163_0/Y                                                                                    sg13g2_nor2_2    1       0.011  0.099  0.124  7.289    (949.92, 910.38)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OFC11145_0234/Y                                                                           sg13g2_inv_4     7       0.039  0.071  0.098  7.387    (952.80, 910.38)  
+      i_croc_soc/i_croc/ictc_postCTS_holdictc_postCTS_setupictc_preCTS_FE_RC_7853_0_dup/Y                                             sg13g2_nand2_2   2       0.024  0.099  0.123  7.510    (953.28, 916.26)  
+      i_croc_soc/i_croc/ictc_postCTS_holdictc_preCTS_FE_RC_183_0_dup/Y                                                                sg13g2_nand2_2   1       0.006  0.063  0.093  7.603    (873.12, 916.26)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_2206_0/Y                                                                              sg13g2_nor2b_2   1       0.006  0.072  0.086  7.688    (874.08, 919.62)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OCPC13817_0237/Y                                                                          sg13g2_inv_2     3       0.014  0.052  0.073  7.762    (876.96, 919.62)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_3903_0/Y                                                                               sg13g2_nand2_2   1       0.006  0.051  0.055  7.816    (861.12, 923.82)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_15586_0/Y                                                                                   sg13g2_nand2_2   1       0.006  0.060  0.078  7.894    (859.68, 928.86)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13275_0/Y                                                                                   sg13g2_nand3_1   1       0.006  0.068  0.081  7.976    (859.20, 946.50)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13271_0/Y                                                                                   sg13g2_nand2_2   2       0.015  0.096  0.113  8.089    (862.56, 946.50)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4928_0/Y                                                                               sg13g2_a21oi_2   1       0.008  0.094  0.144  8.233    (835.68, 947.76)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4874_0/Y                                                                               sg13g2_a21oi_2   1       0.005  0.064  0.112  8.345    (821.76, 942.72)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4616_0/Y                                                                               sg13g2_a21oi_2   2       0.011  0.109  0.127  8.472    (816.96, 942.72)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_7733_0/Y                                                                                    sg13g2_nand2_2   2       0.008  0.072  0.100  8.572    (813.12, 954.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_3142_0/Y                                                                              sg13g2_nand2b_2  1       0.006  0.046  0.059  8.632    (807.36, 954.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_3141_0/Y                                                                              sg13g2_nand2_2   1       0.007  0.063  0.075  8.707    (803.52, 954.06)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_15289_0/Y                                                                                   sg13g2_nand2_2   2       0.012  0.069  0.073  8.780    (797.76, 961.62)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_10354_0_dup/Y                                                                               sg13g2_nand2_1   1       0.006  0.080  0.100  8.880    (787.20, 965.40)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_2702_0_dup/Y                                                                                sg13g2_nand2_2   2       0.010  0.059  0.075  8.955    (785.28, 961.62)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_2166_0/Y                                                                              sg13g2_nand2_2   2       0.012  0.084  0.100  9.055    (782.88, 951.54)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OCPC13543_FE_RN_1660_0/X                                                                  sg13g2_buf_1     1       0.003  0.036  0.124  9.179    (749.00, 949.94)  
+      i_croc_soc/i_croc/ictc_postCTS_setupictc_preCTS_FE_RC_9418_0_dup/Y                                                              sg13g2_nand2b_2  2       0.009  0.062  0.054  9.233    (751.20, 951.54)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_3452_0/Y                                                                                    sg13g2_nand2_1   1       0.004  0.064  0.084  9.318    (749.76, 955.32)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_OFC3571_1206/X                                                                           sg13g2_buf_4     8       0.052  0.090  0.169  9.486    (743.04, 955.74)  
+      i_croc_soc/i_croc/_5209_/Y                                                                                                      sg13g2_nor2_1    1       0.003  0.080  0.109  9.596    (710.40, 1008.66)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OFC10967_all_periph_obi_req_414/Y                                                 sg13g2_inv_1     2       0.012  0.077  0.102  9.698    (707.80, 1007.62)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OFC10968_all_periph_obi_req_414/Y                                                 sg13g2_inv_2     5       0.025  0.093  0.105  9.803    (705.60, 1008.66)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15421_0/Y                                                                           sg13g2_nand2_1   1       0.007  0.112  0.127  9.930    (672.96, 1025.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15420_0/Y                                                                           sg13g2_nor2b_2   3       0.019  0.157  0.166  10.096   (667.20, 1033.02)  
+      i_croc_soc/i_croc/i_timer/clockman_RO571XYP/X                                                                                   sg13g2_buf_1     1       0.003  0.041  0.151  10.248   (663.57, 1046.38)  
+      i_croc_soc/i_croc/i_timer/backintime_RO812VXY/X                                                                                 sg13g2_buf_1     1       0.003  0.034  0.096  10.343   (667.88, 1040.66)  
+      i_croc_soc/i_croc/i_timer/clockman_RO581XYP/X                                                                                   sg13g2_buf_1     1       0.003  0.036  0.094  10.437   (671.73, 1040.66)  
+      i_croc_soc/i_croc/i_timer/backintime_RO842VXY/X                                                                                 sg13g2_buf_1     1       0.006  0.056  0.110  10.547   (669.81, 1040.66)  
+      i_croc_soc/i_croc/i_timer/_1546_/Y                                                                                              sg13g2_nand2_2   1       0.007  0.068  0.087  10.635   (665.28, 1042.26)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13493_1000/Y                                                                  sg13g2_inv_2     2       0.015  0.063  0.078  10.712   (667.20, 1038.90)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13494_1000/Y                                                                  sg13g2_inv_4     4       0.030  0.054  0.070  10.782   (662.40, 1038.90)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13459_FE_OFN2890_1000/Y                                                       sg13g2_inv_4     5       0.043  0.080  0.091  10.873   (647.04, 1106.94)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13460_FE_OFN2890_1000/Y                                                       sg13g2_inv_2     3       0.013  0.051  0.075  10.948   (662.88, 1116.18)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_1054_0/Y                                                                            sg13g2_nor2_1    1       0.003  0.084  0.090  11.037   (662.40, 1138.86)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15416_0/Y                                                                           sg13g2_inv_1     1       0.003  0.038  0.062  11.099   (662.20, 1143.69)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15415_0/Y                                                                           sg13g2_nand2_1   3       0.010  0.086  0.080  11.179   (660.96, 1144.32)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11079_0/Y                                                                           sg13g2_nor4_1    1       0.004  0.080  0.079  11.258   (661.44, 1146.42)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_4701_0/Y                                                                            sg13g2_inv_1     1       0.003  0.044  0.063  11.321   (655.48, 1151.26)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_5027_0/Y                                                                            sg13g2_nand2_1   1       0.004  0.064  0.081  11.402   (653.28, 1151.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_8165_0/Y                                                                            sg13g2_inv_1     1       0.004  0.043  0.060  11.462   (656.44, 1147.46)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_14965_0/Y                                                                           sg13g2_nand2_1   1       0.006  0.083  0.094  11.556   (653.28, 1144.32)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_13652_0/Y                                                                           sg13g2_nor2_2    1       0.009  0.091  0.110  11.667   (647.52, 1146.42)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_13754_0/Y                                                                           sg13g2_nand2_1   1       0.004  0.062  0.100  11.767   (603.84, 1146.84)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11050_0/Y                                                                           sg13g2_inv_1     1       0.006  0.057  0.071  11.838   (606.92, 1147.46)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11049_0/Y                                                                           sg13g2_nand2_2   1       0.011  0.076  0.093  11.931   (608.16, 1143.06)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_8759_0/Y                                                                            sg13g2_nor2_2    1       0.007  0.080  0.110  12.041   (587.04, 1123.74)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_3555_0/Y                                                                            sg13g2_nand2_1   1       0.006  0.083  0.106  12.146   (585.60, 1101.48)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_3541_0/Y                                                                            sg13g2_inv_2     1       0.013  0.062  0.078  12.224   (583.68, 1099.38)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_947_0/Y                                                                             sg13g2_nand2_1   1       0.003  0.065  0.081  12.305   (581.76, 1025.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_946_0/Y                                                                             sg13g2_nor2_1    1       0.002  0.063  0.081  12.386   (583.68, 1031.34)  
+      i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/D                                                                   sg13g2_dfrbp_1   -       0.002  0.063  0.000  12.386   (586.08, 1030.92)  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -early  -path_group reg2reg
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: croc_chip
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1453.11)
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  97.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1517.77 CPU=0:00:17.1 REAL=0:00:17.0)
+End delay calculation (fullDC). (MEM=1517.77 CPU=0:00:18.2 REAL=0:00:18.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1517.8M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.3, REAL = 0:00:00.0, MEM = 1517.8M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1467.88)
+Glitch Analysis: View func_view_bc -- Total Number of Nets Skipped = 12. 
+Glitch Analysis: View func_view_bc -- Total Number of Nets Analyzed = 49887. 
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  0.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1507.05 CPU=0:00:00.6 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1507.05 CPU=0:00:00.8 REAL=0:00:01.0)
+Path 1: VIOLATED Hold Check with Pin i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/CLK 
+Endpoint:   i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/D         (^) checked with  leading edge of 'clk_sys'
+Beginpoint: i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/Q (v) triggered by  leading edge of 'clk_sys'
+Path Groups: {reg2reg}
+Analysis View: func_view_bc
+Other End Arrival Time          1.187
++ Hold                         -0.034
++ Phase Shift                   0.000
+- CPPR Adjustment               0.007
++ Uncertainty                   0.100
+= Required Time                 1.246
+  Arrival Time                  1.246
+  Slack Time                   -0.000
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Prop)  0.916
+     = Beginpoint Arrival Time       0.916
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                             Cell            Fanout  Load   Slew   Delay  Arrival  Pin  
+                                                                                                                                                   Time     Location  
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/CLK  -               32      0.171  0.125  -      0.916    (1008.00, 826.38)  
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/Q    sg13g2_dfrbp_1  6       0.026  0.060  0.204  1.120    (998.40, 827.22)  
+      i_croc_soc/i_croc/_7046_/Y                                                                      sg13g2_a21oi_1  1       0.004  0.027  0.057  1.177    (1009.44, 810.42)  
+      i_croc_soc/i_croc/_7050_/Y                                                                      sg13g2_a21oi_1  1       0.004  0.017  0.044  1.221    (1007.04, 815.46)  
+      i_croc_soc/i_croc/_7051_/Y                                                                      sg13g2_o21ai_1  1       0.003  0.019  0.025  1.246    (1005.12, 819.66)  
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/D            sg13g2_dfrbp_1  -       0.003  0.019  0.000  1.246    (995.52, 821.76)  
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -path_group reg2reg
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: croc_chip
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1481.97)
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Early'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. The libraries 'sg13g2_io_slow_1p35V_3p0V_125C, sg13g2_io_slow_1p08V_3p0V_125C' are not sufficient to interpolate parameter(s): vdd(required=1.08), temperature(required=100), iovdd(required=1.08). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_wc:Late'. Using library 'sg13g2_io_slow_1p08V_3p0V_125C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  97.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1518.01 CPU=0:00:15.2 REAL=0:00:15.0)
+End delay calculation (fullDC). (MEM=1518.01 CPU=0:00:16.3 REAL=0:00:16.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1518.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.3, REAL = 0:00:00.0, MEM = 1518.0M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1474.12)
+Glitch Analysis: View func_view_wc -- Total Number of Nets Skipped = 4. 
+Glitch Analysis: View func_view_wc -- Total Number of Nets Analyzed = 49887. 
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  4.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1514.29 CPU=0:00:02.3 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1514.29 CPU=0:00:02.4 REAL=0:00:02.0)
+Path 1: MET Setup Check with Pin i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/CLK 
+Endpoint:   i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/D                  (^) checked with  leading edge of 'clk_sys'
+Beginpoint: i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/Q (v) triggered by  leading edge of 'clk_sys'
+Path Groups: {reg2reg}
+Analysis View: func_view_wc
+Other End Arrival Time          2.622
+- Setup                         0.124
++ Phase Shift                  10.000
++ CPPR Adjustment               0.017
+- Uncertainty                   0.100
+= Required Time                12.414
+- Arrival Time                 12.386
+= Slack Time                    0.028
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Prop)  1.870
+     = Beginpoint Arrival Time       1.870
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                                             Cell             Fanout  Load   Slew   Delay  Arrival  Pin  
+                                                                                                                                                                                    Time     Location  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/CLK                                                -                32      0.163  0.150  -      1.870    (1257.12, 992.70)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_id_stage_i_controller_i_instr_i_20__reg/Q                                                  sg13g2_dfrbp_1   1       0.011  0.072  0.400  2.270    (1266.72, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_OCPC13614_i_ibex_id_stage_i_controller_i_instr_i_20/Y                         sg13g2_inv_4     2       0.034  0.070  0.085  2.355    (1268.16, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_postCTS_holdFE_OCPC13828_i_ibex_id_stage_i_controller_i_instr_i_20/Y  sg13g2_inv_4     1       0.008  0.028  0.048  2.402    (1279.68, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5005_/Y                                                                   sg13g2_nor2b_2   10      0.136  0.888  0.806  3.209    (1296.96, 993.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5860_/Y                                                                   sg13g2_a22oi_1   1       0.006  0.235  0.398  3.607    (1380.00, 815.46)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_13165_0/Y                                                sg13g2_o21ai_1   1       0.006  0.183  0.231  3.838    (1383.36, 804.54)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/_5865_/Y                                                                   sg13g2_nand2_1   1       0.006  0.097  0.133  3.971    (1373.28, 811.68)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_154_0/Y                                                  sg13g2_inv_2     1       0.007  0.047  0.067  4.038    (1375.20, 812.10)  
+      i_croc_soc/i_croc/i_core_wrap/i_ibex_register_file_i/ictc_preCTS_FE_RC_11374_0/Y                                                sg13g2_nor2_2    1       0.008  0.048  0.056  4.094    (1385.28, 806.22)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_OCPC12675_i_ibex_ex_block_i_multdiv_operand_b_i_23/X                          sg13g2_buf_8     3       0.092  0.086  0.144  4.238    (1380.96, 806.22)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_544_0/Y                                                                         sg13g2_a21oi_2   1       0.010  0.130  0.167  4.405    (1131.84, 962.88)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OCPC9767_1336/X                                                                    sg13g2_buf_8     3       0.035  0.052  0.164  4.570    (1127.52, 970.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_15252_0/Y                                                                       sg13g2_nand3_1   1       0.004  0.097  0.116  4.686    (957.12, 969.18)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OCPC9579_1337/X                                                                    sg13g2_buf_4     3       0.013  0.041  0.149  4.835    (952.80, 970.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_4687_0/Y                                                                   sg13g2_o21ai_1   2       0.009  0.192  0.186  5.020    (941.28, 964.98)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3282_0/Y                                                                        sg13g2_nand2_2   2       0.011  0.102  0.141  5.161    (945.60, 959.10)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3281_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.054  0.071  5.232    (960.48, 954.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_3280_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.055  0.073  5.306    (965.28, 954.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_245_0/Y                                                                         sg13g2_nand2_2   2       0.009  0.055  0.062  5.368    (966.72, 959.10)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_setupFE_RC_2417_0/Y                                                                  sg13g2_a21oi_2   3       0.019  0.122  0.141  5.509    (964.80, 950.28)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_4688_0/Y                                                                   sg13g2_a21oi_2   3       0.017  0.146  0.185  5.695    (944.16, 940.20)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_464_0_dup/Y                                                                     sg13g2_a21oi_2   2       0.014  0.112  0.159  5.854    (947.52, 932.64)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_8717_0/Y                                                                        sg13g2_inv_2     1       0.006  0.047  0.069  5.922    (944.64, 925.50)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_8716_0/Y                                                                        sg13g2_nand2_2   1       0.006  0.088  0.070  5.992    (937.44, 928.86)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_13084_0/Y                                                                       sg13g2_nand2_2   1       0.007  0.055  0.068  6.059    (935.52, 931.38)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_13155_0/Y                                                                       sg13g2_a21oi_2   1       0.006  0.063  0.088  6.147    (928.32, 932.64)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_RC_5012_0/Y                                                                        sg13g2_nor2_2    1       0.006  0.071  0.086  6.233    (924.96, 933.06)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_postCTS_holdFE_RC_3558_0/Y                                                                   sg13g2_a21oi_2   1       0.009  0.076  0.065  6.297    (927.84, 935.16)  
+      i_croc_soc/i_croc/i_core_wrap/ictc_preCTS_FE_OFC2107_core_data_obi_req_70/X                                                     sg13g2_buf_8     3       0.035  0.047  0.143  6.441    (934.08, 934.74)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_1387_0/X                                                                              sg13g2_buf_2     3       0.018  0.065  0.148  6.588    (945.12, 927.18)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_1386_0/Y                                                                              sg13g2_nor2_2    3       0.015  0.124  0.145  6.733    (950.88, 933.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_OFC5628_0091/Y                                                                           sg13g2_inv_1     2       0.006  0.060  0.093  6.826    (963.56, 916.89)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_14962_0/Y                                                                                   sg13g2_nand2_1   1       0.005  0.065  0.084  6.910    (964.80, 917.52)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13411_0/Y                                                                                   sg13g2_nand2_1   1       0.004  0.069  0.091  7.001    (962.40, 904.92)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13595_0/Y                                                                                   sg13g2_inv_1     1       0.007  0.062  0.076  7.076    (961.24, 901.77)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13701_0/Y                                                                                   sg13g2_nand2_2   1       0.006  0.060  0.089  7.165    (955.68, 908.70)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_9163_0/Y                                                                                    sg13g2_nor2_2    1       0.011  0.099  0.124  7.289    (949.92, 910.38)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OFC11145_0234/Y                                                                           sg13g2_inv_4     7       0.039  0.071  0.098  7.387    (952.80, 910.38)  
+      i_croc_soc/i_croc/ictc_postCTS_holdictc_postCTS_setupictc_preCTS_FE_RC_7853_0_dup/Y                                             sg13g2_nand2_2   2       0.024  0.099  0.123  7.510    (953.28, 916.26)  
+      i_croc_soc/i_croc/ictc_postCTS_holdictc_preCTS_FE_RC_183_0_dup/Y                                                                sg13g2_nand2_2   1       0.006  0.063  0.093  7.603    (873.12, 916.26)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_2206_0/Y                                                                              sg13g2_nor2b_2   1       0.006  0.072  0.086  7.688    (874.08, 919.62)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OCPC13817_0237/Y                                                                          sg13g2_inv_2     3       0.014  0.052  0.073  7.762    (876.96, 919.62)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_3903_0/Y                                                                               sg13g2_nand2_2   1       0.006  0.051  0.055  7.816    (861.12, 923.82)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_15586_0/Y                                                                                   sg13g2_nand2_2   1       0.006  0.060  0.078  7.894    (859.68, 928.86)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13275_0/Y                                                                                   sg13g2_nand3_1   1       0.006  0.068  0.081  7.976    (859.20, 946.50)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_13271_0/Y                                                                                   sg13g2_nand2_2   2       0.015  0.096  0.113  8.089    (862.56, 946.50)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4928_0/Y                                                                               sg13g2_a21oi_2   1       0.008  0.094  0.144  8.233    (835.68, 947.76)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4874_0/Y                                                                               sg13g2_a21oi_2   1       0.005  0.064  0.112  8.345    (821.76, 942.72)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_RC_4616_0/Y                                                                               sg13g2_a21oi_2   2       0.011  0.109  0.127  8.472    (816.96, 942.72)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_7733_0/Y                                                                                    sg13g2_nand2_2   2       0.008  0.072  0.100  8.572    (813.12, 954.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_3142_0/Y                                                                              sg13g2_nand2b_2  1       0.006  0.046  0.059  8.632    (807.36, 954.06)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_3141_0/Y                                                                              sg13g2_nand2_2   1       0.007  0.063  0.075  8.707    (803.52, 954.06)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_15289_0/Y                                                                                   sg13g2_nand2_2   2       0.012  0.069  0.073  8.780    (797.76, 961.62)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_10354_0_dup/Y                                                                               sg13g2_nand2_1   1       0.006  0.080  0.100  8.880    (787.20, 965.40)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_2702_0_dup/Y                                                                                sg13g2_nand2_2   2       0.010  0.059  0.075  8.955    (785.28, 961.62)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_RC_2166_0/Y                                                                              sg13g2_nand2_2   2       0.012  0.084  0.100  9.055    (782.88, 951.54)  
+      i_croc_soc/i_croc/ictc_postCTS_holdFE_OCPC13543_FE_RN_1660_0/X                                                                  sg13g2_buf_1     1       0.003  0.036  0.124  9.179    (749.00, 949.94)  
+      i_croc_soc/i_croc/ictc_postCTS_setupictc_preCTS_FE_RC_9418_0_dup/Y                                                              sg13g2_nand2b_2  2       0.009  0.062  0.054  9.233    (751.20, 951.54)  
+      i_croc_soc/i_croc/ictc_preCTS_FE_RC_3452_0/Y                                                                                    sg13g2_nand2_1   1       0.004  0.064  0.084  9.318    (749.76, 955.32)  
+      i_croc_soc/i_croc/ictc_postCTS_setupFE_OFC3571_1206/X                                                                           sg13g2_buf_4     8       0.052  0.090  0.169  9.486    (743.04, 955.74)  
+      i_croc_soc/i_croc/_5209_/Y                                                                                                      sg13g2_nor2_1    1       0.003  0.080  0.109  9.596    (710.40, 1008.66)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OFC10967_all_periph_obi_req_414/Y                                                 sg13g2_inv_1     2       0.012  0.077  0.102  9.698    (707.80, 1007.62)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OFC10968_all_periph_obi_req_414/Y                                                 sg13g2_inv_2     5       0.025  0.093  0.105  9.803    (705.60, 1008.66)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15421_0/Y                                                                           sg13g2_nand2_1   1       0.007  0.112  0.127  9.930    (672.96, 1025.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15420_0/Y                                                                           sg13g2_nor2b_2   3       0.019  0.157  0.166  10.096   (667.20, 1033.02)  
+      i_croc_soc/i_croc/i_timer/clockman_RO571XYP/X                                                                                   sg13g2_buf_1     1       0.003  0.041  0.151  10.248   (663.57, 1046.38)  
+      i_croc_soc/i_croc/i_timer/backintime_RO812VXY/X                                                                                 sg13g2_buf_1     1       0.003  0.034  0.096  10.343   (667.88, 1040.66)  
+      i_croc_soc/i_croc/i_timer/clockman_RO581XYP/X                                                                                   sg13g2_buf_1     1       0.003  0.036  0.094  10.437   (671.73, 1040.66)  
+      i_croc_soc/i_croc/i_timer/backintime_RO842VXY/X                                                                                 sg13g2_buf_1     1       0.006  0.056  0.110  10.547   (669.81, 1040.66)  
+      i_croc_soc/i_croc/i_timer/_1546_/Y                                                                                              sg13g2_nand2_2   1       0.007  0.068  0.087  10.635   (665.28, 1042.26)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13493_1000/Y                                                                  sg13g2_inv_2     2       0.015  0.063  0.078  10.712   (667.20, 1038.90)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13494_1000/Y                                                                  sg13g2_inv_4     4       0.030  0.054  0.070  10.782   (662.40, 1038.90)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13459_FE_OFN2890_1000/Y                                                       sg13g2_inv_4     5       0.043  0.080  0.091  10.873   (647.04, 1106.94)  
+      i_croc_soc/i_croc/i_timer/ictc_postCTS_holdFE_OCPC13460_FE_OFN2890_1000/Y                                                       sg13g2_inv_2     3       0.013  0.051  0.075  10.948   (662.88, 1116.18)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_1054_0/Y                                                                            sg13g2_nor2_1    1       0.003  0.084  0.090  11.037   (662.40, 1138.86)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15416_0/Y                                                                           sg13g2_inv_1     1       0.003  0.038  0.062  11.099   (662.20, 1143.69)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_15415_0/Y                                                                           sg13g2_nand2_1   3       0.010  0.086  0.080  11.179   (660.96, 1144.32)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11079_0/Y                                                                           sg13g2_nor4_1    1       0.004  0.080  0.079  11.258   (661.44, 1146.42)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_4701_0/Y                                                                            sg13g2_inv_1     1       0.003  0.044  0.063  11.321   (655.48, 1151.26)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_5027_0/Y                                                                            sg13g2_nand2_1   1       0.004  0.064  0.081  11.402   (653.28, 1151.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_8165_0/Y                                                                            sg13g2_inv_1     1       0.004  0.043  0.060  11.462   (656.44, 1147.46)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_14965_0/Y                                                                           sg13g2_nand2_1   1       0.006  0.083  0.094  11.556   (653.28, 1144.32)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_13652_0/Y                                                                           sg13g2_nor2_2    1       0.009  0.091  0.110  11.667   (647.52, 1146.42)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_13754_0/Y                                                                           sg13g2_nand2_1   1       0.004  0.062  0.100  11.767   (603.84, 1146.84)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11050_0/Y                                                                           sg13g2_inv_1     1       0.006  0.057  0.071  11.838   (606.92, 1147.46)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_11049_0/Y                                                                           sg13g2_nand2_2   1       0.011  0.076  0.093  11.931   (608.16, 1143.06)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_8759_0/Y                                                                            sg13g2_nor2_2    1       0.007  0.080  0.110  12.041   (587.04, 1123.74)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_3555_0/Y                                                                            sg13g2_nand2_1   1       0.006  0.083  0.106  12.146   (585.60, 1101.48)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_3541_0/Y                                                                            sg13g2_inv_2     1       0.013  0.062  0.078  12.224   (583.68, 1099.38)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_947_0/Y                                                                             sg13g2_nand2_1   1       0.003  0.065  0.081  12.305   (581.76, 1025.88)  
+      i_croc_soc/i_croc/i_timer/ictc_preCTS_FE_RC_946_0/Y                                                                             sg13g2_nor2_1    1       0.002  0.063  0.081  12.386   (583.68, 1031.34)  
+      i_croc_soc/i_croc/i_timer/counter_hi_i_target_reached_o_reg/D                                                                   sg13g2_dfrbp_1   -       0.002  0.063  0.000  12.386   (586.08, 1030.92)  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -early  -path_group reg2reg
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: croc_chip
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1489.21)
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio0_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio0_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio1_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio1_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio2_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio2_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio3_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio3_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio4_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio4_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio5_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio5_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio6_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio6_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio7_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio7_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio8_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio8_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Early'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+**WARN: (IMPESI-3194):	Unable to interpolate for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. The libraries 'sg13g2_io_fast_1p32V_3p6V_m40C, sg13g2_io_fast_1p65V_3p6V_m40C' are not sufficient to interpolate parameter(s): vdd(required=1.32), iovdd(required=1.32). Examine your libset and provide libraries to enable interpolation.
+Type 'man IMPESI-3194' for more detail.
+**WARN: (IMPESI-3199):	Unable to find proper library binding because there was no exact match and interpolation could not find appropriate libraries for instance 'pad_gpio9_io' (cell: sg13g2_IOPadInOut30mA) view 'func_view_bc:Late'. Using library 'sg13g2_io_fast_1p32V_3p6V_m40C' for analysis.
+Type 'man IMPESI-3199' for more detail.
+**WARN: (IMPESI-3095):	Net: 'gpio9_io' has no receivers. SI analysis is not performed.
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  97.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1525.25 CPU=0:00:14.9 REAL=0:00:15.0)
+End delay calculation (fullDC). (MEM=1525.25 CPU=0:00:16.0 REAL=0:00:16.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1525.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.3, REAL = 0:00:00.0, MEM = 1525.2M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1476.37)
+Glitch Analysis: View func_view_bc -- Total Number of Nets Skipped = 12. 
+Glitch Analysis: View func_view_bc -- Total Number of Nets Analyzed = 49887. 
+Total number of fetched objects 49887
+AAE_INFO-618: Total number of nets in the design is 51214,  0.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1517.54 CPU=0:00:00.6 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1517.54 CPU=0:00:00.7 REAL=0:00:00.0)
+Path 1: VIOLATED Hold Check with Pin i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/CLK 
+Endpoint:   i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/D         (^) checked with  leading edge of 'clk_sys'
+Beginpoint: i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/Q (v) triggered by  leading edge of 'clk_sys'
+Path Groups: {reg2reg}
+Analysis View: func_view_bc
+Other End Arrival Time          1.187
++ Hold                         -0.034
++ Phase Shift                   0.000
+- CPPR Adjustment               0.007
++ Uncertainty                   0.100
+= Required Time                 1.246
+  Arrival Time                  1.246
+  Slack Time                   -0.000
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Prop)  0.916
+     = Beginpoint Arrival Time       0.916
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                             Cell            Fanout  Load   Slew   Delay  Arrival  Pin  
+                                                                                                                                                   Time     Location  
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/CLK  -               32      0.171  0.125  -      0.916    (1008.00, 826.38)  
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_status_cnt_q_1__reg/Q    sg13g2_dfrbp_1  6       0.026  0.060  0.204  1.120    (998.40, 827.22)  
+      i_croc_soc/i_croc/_7046_/Y                                                                      sg13g2_a21oi_1  1       0.004  0.027  0.057  1.177    (1009.44, 810.42)  
+      i_croc_soc/i_croc/_7050_/Y                                                                      sg13g2_a21oi_1  1       0.004  0.017  0.044  1.221    (1007.04, 815.46)  
+      i_croc_soc/i_croc/_7051_/Y                                                                      sg13g2_o21ai_1  1       0.003  0.019  0.025  1.246    (1005.12, 819.66)  
+      i_croc_soc/i_croc/i_main_xbar_gen_mux_0__i_mux_gen_no_id_assign_i_fifo_usage_o_reg/D            sg13g2_dfrbp_1  -       0.003  0.019  0.000  1.246    (995.52, 821.76)  
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> win
+<CMD> fit
+<CMD> zoomBox -289.88200 489.14700 2225.11500 1545.70000
+<CMD> zoomBox 73.45500 665.26500 1890.54100 1428.62500
+<CMD> zoomBox -792.77500 245.38300 2688.19400 1707.74200
+<CMD> fit
+<CMD> zoomBox -498.90700 350.26300 2459.91100 1593.26600
+<CMD> zoomBox -262.71600 455.84300 2252.28000 1512.39600
+<CMD> zoomBox 481.84100 788.66700 1597.75800 1257.46500
+<CMD> zoomBox 646.63900 862.33400 1452.88800 1201.04000
+<CMD> zoomBox 765.70500 915.55800 1348.22000 1160.27300
+<CMD> zoomBox 851.72900 954.01200 1272.59700 1130.81900
+<CMD> fit
+<CMD> zoomBox -1488.81000 -92.00100 3329.12900 1932.02100
+
+*** Memory Usage v#1 (Current mem = 1479.539M, initial mem = 273.906M) ***
+*** Message Summary: 2767 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:37:29, real=5:05:08, mem=1479.5M) ---

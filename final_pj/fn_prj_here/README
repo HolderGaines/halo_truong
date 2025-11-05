@@ -1,0 +1,21 @@
+###Our final prject very EASY!!!
+#Please use input data and setting in the flow!
+#Run Place & Route with flow in script folder.
+==> That all!
+
+### Requirement:
+	- Timing setup/hold is almost clean at postRoute, wns/tns under 0.030ns/0.3ns is PASS!
+	- Short under 10 at postRoute is PASS!
+	- Target frequency is 100Mhz (Period 10ns).
+	- Target utilization is 58%.
+	- Setup/Hold uncertainty is 0.1ns.
+	- No limit layer for routing.
+	- No require any don't use cell type.
+	- Please use 2 cpus for your run! Please use 2 cpus for your run! Please use 2 cpus for your run!
+
+
+
+... easy to FAIL ( ^ v ^ ) !!! 
+
+---
+Good luck to all of you!

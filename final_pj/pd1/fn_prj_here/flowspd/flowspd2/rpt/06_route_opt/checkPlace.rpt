@@ -1,0 +1,8 @@
+**Info: (IMPSP-307): Design contains fractional 1 cell.
+Begin checking placement ... (start mem=2659.1M, init mem=2659.1M)
+Pre-route DRC Violation:	194
+*info: Placed = 52083          (Fixed = 8322)
+*info: Unplaced = 0           
+Placement Density:61.27%(651778/1063714)
+Placement Density (including fixed std cells):61.89%(669040/1080976)
+Finished checkPlace (total: cpu=0:00:01.8, real=0:00:01.0; vio checks: cpu=0:00:01.3, real=0:00:00.0; mem=2659.1M)

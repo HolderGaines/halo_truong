@@ -1,0 +1,1 @@
+/ictc/student_data/vantruong/04_ss4/pr/04ctshold.dat/mmmc/modes/func_mode_ideal_bc/func_mode_ideal_bc.sdc

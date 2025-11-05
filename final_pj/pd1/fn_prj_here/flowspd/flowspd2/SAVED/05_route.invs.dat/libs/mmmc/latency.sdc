@@ -1,0 +1,1 @@
+/ictc/student_data/vantruong/04_ss4/pr/04ctshold.dat/mmmc/views/func_view_bc/latency.sdc
